@@ -1,0 +1,35 @@
+Hibiki House Salad
+6.50
+Fresh spring mix and romaine hearts with house dressing
+
+Cucumber Salad
+3.95
+Fresh cucumber with mustard dressing
+
+Seaweed Salad
+5.95
+Marinated seaweed with sesame oil & seeds
+
+Tako Salad
+6.95
+Thin slices of marinated tako with sesame oil & seeds
+
+Salmon Skin Salad
+8.95
+Baked salmon skin on top of house salad served with mustard dressing
+
+Spicy Tuna Salad
+8.95
+Spicy tuna on top of house salad served with mustard dressing
+
+Sashimi Salad
+13.95
+Tuna, salmon, white fish, albacore, yellowtail, octopus, and white tuna on top of house salad served with mustard dressing
+
+Seared Albacore Salad
+13.95
+Seared albacore on top of house salad served with mustard dressing
+
+Tuna Tataki Salad
+15.95
+Seared tuna on top of house salad served with mustard dressing
