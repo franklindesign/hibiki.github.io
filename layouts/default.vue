@@ -237,6 +237,7 @@
               <ul style="list-style-type:none">
                 <li><h4>HIBIKI</h4></li>
                 <li><a @click="dialog = true" class="grey--text">About</a></li>
+                <li><nuxt-link to="/faq" class="grey--text">FAQ </nuxt-link> </li>
                 <li><a @click="openhours = true" class="grey--text">Hours</a></li>
                 <li><nuxt-link to="/jobs" class="grey--text">Jobs </nuxt-link> </li>
                 <li><a @click="dialogEmails = true" class="grey--text">Emails</a></li>

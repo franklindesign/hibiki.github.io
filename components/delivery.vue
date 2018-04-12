@@ -52,7 +52,7 @@
 
 .deliverywrap {
   display: flex;
-  width: 300px;
+  width: 280px;
   height: auto;
 }
 

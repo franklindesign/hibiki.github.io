@@ -10,7 +10,7 @@
                   sm6
                   xs6
                   >
-        <v-card style="margin: 5px;" class="cardBack">
+        <v-card style="margin: 5px" class="cardBack">
           <v-card-media 
               :src="card.src"
               class="cardsize"

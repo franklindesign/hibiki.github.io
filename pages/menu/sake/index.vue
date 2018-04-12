@@ -76,7 +76,7 @@
             title: 'Nigori Matcha / Coconut Sake', 
             itemDescription: 'Kyoto is famous for fine Matcha and Sake. Enjoy sweet and bitter taste!', 
             src: require('static/images/sake/nigorimatchacoconut.jpg'),
-            price: '4.95',
+            price: '12.95',
             bottlesize: '300ml',
             sakemeter: '-3.5 (slightly sweet)', 
             alcohol: '9.5%',
