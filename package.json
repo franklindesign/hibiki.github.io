@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.1",
     "@nuxtjs/google-analytics": "^2.0.2",
     "ajv": "^6.4.0",
     "imagemin": "^5.3.1",
