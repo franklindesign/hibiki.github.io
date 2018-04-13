@@ -1,0 +1,7 @@
+# Custom header for Netlify
+
+/
+Cache-Control: public, max-age: 604800
+
+/static
+Cache-Control: public, max-age: 2592000
