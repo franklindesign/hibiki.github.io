@@ -13,6 +13,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { 'http-equiv': 'cache-control', content: 'max-age= 2628000' },
+      { name: 'keywords', content: 'Hibiki Sushi, Hibiki Sushi Bar, Sushi Santa Clarita, Sushi SCV, Santa Clarita, Canyon Country Restaurants, Santa Clarita Restaurants, SCV Restaurants, Canyon Country Sushi, Los Angeles Sushi, Hibiki Sushi Inc. Santa Clarita Valley, Yelp Sushi'},
       { hid: 'description', name: 'description', content: 'All-You-Can-Eat Sushi & a large menu in a roomy, laid-back Japanese bar & eatery with draft beer, and select premium sake & wine bottles.' }
     ],
     link: [
@@ -55,12 +57,6 @@ module.exports = {
       maxAge: 1000 * 60 * 60
     }]
   ],
-
-  render: {
-    static: {
-      maxAge: 1000 * 60 * 60 * 24 * 7
-    }
-  },
 
   /*
   ** Build configuration
