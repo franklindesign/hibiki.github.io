@@ -42,12 +42,11 @@
           <div class="gradientBorder">
             <div class="pricemargin">
               <h2 style="color: yellow">ALL YOU CAN EAT:<br>
-              DINNER & HOLIDAYS</h2>
+              DINNER/WEEKEND & HOLIDAYS</h2>
               <h4>90 Min.</h4>
               <p>
                 <ul><br>
                   <li>Adults (10-65): 25.95</li>
-                  <li>Seniors (66+): 22.95</li>
                   <li>Kids (4-9): 13.50</li>
                   <li>Babies (0-3): FREE</li>
                 </ul>
