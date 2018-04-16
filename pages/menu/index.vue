@@ -14,7 +14,7 @@
               <br>
               <p>
                 <ul>
-                  <li>Adults (All): 29.95</li>
+                  <li>Adults: 29.95</li>
                 </ul>
               </p>
               <p> Order from 23 options of Sushi/Sashimi.</p>
@@ -29,7 +29,7 @@
               <p>Monday through Friday (11:30 AM - 4 PM)</p>
               <p>
                 <ul>
-                  <li>Adults (10-65): 22.95</li>
+                  <li>Adults: 22.95</li>
                   <li>Kids (4-9): 11.95</li>
                   <li>Babies (0-3): FREE</li>
                 </ul>
@@ -46,7 +46,7 @@
               <h4>90 Min.</h4>
               <p>
                 <ul><br>
-                  <li>Adults (10-65): 25.95</li>
+                  <li>Adults: 25.95</li>
                   <li>Kids (4-9): 13.50</li>
                   <li>Babies (0-3): FREE</li>
                 </ul>
