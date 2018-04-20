@@ -2,7 +2,9 @@
 <v-container>
   <h1 class="cursive mb-3">This Week's Special:</h1>
     <v-layout row wrap>
-      <v-flex xs12 sm6 md6 lg4 xl4>
+      <h1>No Offers this week.</h1>
+      <!-- disable on expiration -->
+      <!-- <v-flex xs12 sm6 md6 lg4 xl4>
         <div>
           <v-card style="margin: 5px;">
             <v-card-media
@@ -23,8 +25,8 @@
 
           </v-card>
         </div>
-      </v-flex>
-      <v-flex xs12 sm6 md6 lg4 xl4>
+      </v-flex> -->
+      <!-- <v-flex xs12 sm6 md6 lg4 xl4>
         <div>
           <v-card style="margin: 5px;">
             <v-card-media
@@ -46,7 +48,7 @@
 
           </v-card>
         </div>
-      </v-flex>
+      </v-flex> -->
     </v-layout>
 </v-container>
 </template>
@@ -55,20 +57,22 @@
   export default {
     data () {
       return {
-        offerOne: 
+
+        // disable on expiration
+        /* offerOne: 
           { 
             
             description: 'Lunch Special: 50% Off all premium sushi rolls. (A la carte / dine-in only) from 11:30 AM to 4 PM.',
             duration: 'April 15-19', 
             src: require('static/images/offerImgs/rollsgroup.jpg'),
-          },
-        offerTwo: 
+          }, */
+       /*  offerTwo: 
           { 
             
             description: 'Sake Discount: 50% Off on all new premium sake bottles.', 
             duration: 'April 12-15',
             src: require('static/images/offerImgs/sakegroup.jpg'),
-          }   
+          }  */  
       }
     }
   }

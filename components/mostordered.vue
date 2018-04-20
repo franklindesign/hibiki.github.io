@@ -37,32 +37,28 @@
         cards: [
           { 
             itemNumber: 1,
-            title: 'Gyoza', 
-            itemDescription: 'Lightly fried beef and vegetable dumplings', 
-            src: require('static/images/meatappetizers/gyoza.jpg'),
+            title: 'Rainbow Roll',  
+            src: require('static/images/freshrolls/rainbowroll.jpg'),
             price: '10.95', 
             flex: 3 },
 
           { 
             itemNumber: 2,
-            title: 'Baked Salmon Roll',
-            itemDescription: 'inside: cream cheese, avocado, and gobo. top: salmon', 
-            src: require('static/images/cookedrolls/bakedsalmonroll.jpg'),
+            title: 'Lemonade Roll',
+            src: require('static/images/freshrolls/lemonaderoll.jpg'),
             price: '10.95', 
             flex: 3 },
 
           { 
             itemNumber: 3,
-            title: 'Lobster Roll', 
-            itemDescription: 'inside: California roll. top: cooked baby lobster (crawfish)',
-            src: require('static/images/cookedrolls/lobsterroll.jpg'),
+            title: 'Mango Mania Roll',
+            src: require('static/images/freshrolls/mangomaniaroll.jpg'),
             price: '11.95', 
             flex: 3 },
           { 
             itemNumber: 4,
-            title: 'B.S.C.R', 
-            itemDescription: 'inside: California roll. top: baked scallop',
-            src: require('static/images/cookedrolls/bscr.jpg'),
+            title: 'Sun Burn Roll', 
+            src: require('static/images/freshrolls/sunburnroll.jpg'),
             price: '11.95', 
             flex: 3 }
         ]

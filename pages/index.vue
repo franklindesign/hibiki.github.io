@@ -4,7 +4,7 @@
     <billboard/>
   </section>
   <section>
-    <specialoffers />
+    <!-- <specialoffers /> -->
     <mostpopular />
     <mostordered />
   </section>
@@ -24,7 +24,7 @@ import mostpopular from '~/components/mostpopular.vue'
 import mostordered from '~/components/mostordered.vue'
 import customers from '~/components/customers.vue'
 import delivery from '~/components/delivery.vue'
-import specialoffers from '~/components/specialoffers.vue'
+// import specialoffers from '~/components/specialoffers.vue'
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     mostordered,
     customers,
     delivery,
-    specialoffers
+    // specialoffers
   }
 }
 

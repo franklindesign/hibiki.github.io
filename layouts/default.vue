@@ -69,10 +69,38 @@
       </v-btn>
 
         <v-toolbar-items class="hidden-sm-and-down mr-5 pr-5">
-          <v-btn flat active-class router to="/" slot="activator" class="mr-2"><v-icon class="mr-2">home</v-icon> Home</v-btn>
-          <v-btn flat active-class router to="/menu" class="mr-3">Menu</v-btn>
+          <v-btn 
+            flat 
+            active-class 
+            router 
+            to="/" 
+            slot="activator" 
+            class="mr-2">
+          <v-icon 
+            class="mr-2">home
+          </v-icon> Home
+          </v-btn>
+          <v-btn 
+            flat 
+            active-class 
+            router 
+            to="/menu" 
+            class="mr-3">
+          <v-icon 
+            class="mr-2">view_module
+          </v-icon>Menu
+          </v-btn>
           <div class="mt-2">
-          <v-btn round outline @click="dialogEmails = true" > <v-icon class="mr-2">email</v-icon> Sign up for Hibiki emails</v-btn>
+          <v-btn 
+            round 
+            outline 
+            @click="dialogEmails = true"
+          > 
+          <v-icon 
+          class="mr-2">email
+          </v-icon> 
+          Sign up for Hibiki emails
+          </v-btn>
           </div>
         </v-toolbar-items>
     </v-toolbar>

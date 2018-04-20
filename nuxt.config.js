@@ -35,14 +35,16 @@ module.exports = {
   css: [
     'vuetify/src/stylus/main.styl',
     '~assets/styles/main.css',
-    '~assets/styles/mailchimp.css'
+    '~assets/styles/mailchimp.css',
+    'swiper/dist/css/swiper.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    { src: '~/plugins/swiper.js', ssr: false }
   ],
 
   /*
