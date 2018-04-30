@@ -74,6 +74,14 @@
             prevEl: '.swiper-button-prev'
           },
           breakpoints: {
+            1920: {
+              slidesPerView: 4,
+              spaceBetween: 10
+            },
+            1680: {
+              slidesPerView: 4,
+              spaceBetween: 10
+            },
             1440: {
               slidesPerView: 4,
               spaceBetween: 10

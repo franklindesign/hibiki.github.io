@@ -155,7 +155,7 @@
           }, 
           {
             value: false,
-            name: 'Swet Shrimp **',
+            name: 'Sweet Shrimp **',
             sushi: '9.95',
             sashimi: 'N/A',
           }, 
