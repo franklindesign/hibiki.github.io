@@ -1,7 +1,10 @@
 <template>
 <div>
   <section class="hero">
-    <billboard/>
+    <billboard />
+  </section>
+  <section>
+    <signup />
   </section>
   <section>
     <!-- <specialoffers /> -->
@@ -24,15 +27,18 @@ import mostpopular from '~/components/mostpopular.vue'
 import mostordered from '~/components/mostordered.vue'
 import customers from '~/components/customers.vue'
 import delivery from '~/components/delivery.vue'
+import signup from '~/components/signup.vue'
 // import specialoffers from '~/components/specialoffers.vue'
 
 export default {
+  
   components: {
     billboard,
     mostpopular,
     mostordered,
     customers,
     delivery,
+    signup
     // specialoffers
   }
 }

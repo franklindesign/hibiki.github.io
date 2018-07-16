@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
   .contentBG {
-    background: rgb(17, 17, 17)
+    background: #111111
   }
 
 .page-enter-active, .page-leave-active {

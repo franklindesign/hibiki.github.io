@@ -23,7 +23,7 @@
 
         <v-divider></v-divider>
 
-        <v-subheader class="white--text">
+        <v-subheader>
           <h3>Menu</h3>
         </v-subheader> 
         <v-list-tile 
@@ -90,11 +90,12 @@
             class="mr-2">view_module
           </v-icon>Menu
           </v-btn>
-          <div class="mt-2">
+          <div class="mt-3">
           <v-btn 
             round 
             outline 
-            @click="dialogEmails = true"
+            to="/emails"
+            
           > 
           <v-icon 
           class="mr-2">email
@@ -173,82 +174,9 @@
   </v-layout>
 <!-- End View Location Dialog -->
 
-
-
-<!-- Begin MailChimp Signup Dialog -->
-    <v-layout row wrap>
-      <v-dialog
-        v-model="dialogEmails"
-        scrollable
-        
-        max-width="350px"
-        transition="dialog-transition"
-      >
-      <v-card light>
-        <v-card-title>
-          
-
-
-
-<div id="mc_embed_signup">
-    <form   action="//hibikisushi.us3.list-manage.com/subscribe/post?u=1d5a47e0c5045755b31f3e12b&amp;id=c463e52d9b" method="post" 
-            id="mc-embedded-subscribe-form" 
-            name="mc-embedded-subscribe-form" 
-            class="validate" 
-            target="_blank" 
-            novalidate>
-  <div id="mc_embed_signup_scroll">
-    
-    <h2 class="cursive" >Sign-up for Hibiki Emails</h2>
-    <span>Subscribe to Hibiki Email to receive 10% off coupon.</span> 
-    
-  
-      <div class="mc-field-group mt-4">
-        <label for="mce-EMAIL"><h4>Email Address </h4></label>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-      </div>
-      <div class="mc-field-group">
-        <label for="mce-FNAME">First Name </label>
-        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-      </div>
-      <div class="mc-field-group">
-        <label for="mce-LNAME">Last Name </label>
-        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-      </div>
-      <div class="mc-field-group size1of2">
-        <label for="mce-MMERGE3-month">Birthday </label>
-      <div class="datefield">
-        <span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="MMERGE3[month]" id="mce-MMERGE3-month"></span> / 
-        <span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="MMERGE3[day]" id="mce-MMERGE3-day"></span> 
-        <span class="small-meta nowrap">( mm / dd )</span>
-      </div>
-  </div>	
-  <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-  <div style="position: absolute; left: -5000px;"><input type="text" name="b_b7da092add9faced53d200a00_df6dfb95bd" tabindex="-1" value=""></div>
-  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-
-  <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn class="mt-4" color="black" flat="flat" @click="dialogEmails = false">Close</v-btn>         
-  </v-card-actions>
-  </div>
-  </form>
-</div>
-
-<!--End mc_embed_signup-->
-          
-        </v-card-title>
-      </v-card>
-        
-      </v-dialog>
-    </v-layout>
-
   
 <!-- Begin Footer -->
- <v-footer :fixed="fixed" class="black wrapper" app>
+ <v-footer dark class="grey darken-4 wrapper" height="auto">
    <div class="contain ">
      <v-layout row wrap >
         <v-flex xs12 md3 lg3 >
@@ -268,7 +196,7 @@
                 <li><nuxt-link to="/faq" class="grey--text">FAQ </nuxt-link> </li>
                 <li><a @click="openhours = true" class="grey--text">Hours</a></li>
                 <li><nuxt-link to="/jobs" class="grey--text">Jobs </nuxt-link> </li>
-                <li><a @click="dialogEmails = true" class="grey--text">Emails</a></li>
+                <li><nuxt-link to="/emails"  class="grey--text">Emails</nuxt-link></li>
               </ul>
               </div>
             </v-flex>
@@ -279,6 +207,8 @@
                 <li><a href="http://www.grubhub.com" class="grey--text" target="_blank">GrubHub</a></li>
                 <li><a href="http://www.Ubereats.com" class="grey--text" target="_blank">UberEats</a></li>
                 <li><a href="http://www.postmates.com" class="grey--text" target="_blank">Postmates</a></li>
+                <li><a href="http://www.localflavor.com" class="grey--text" target="_blank">LocalFlavor</a></li>
+                <li><a href="http://www.scvsmartshopper.com" class="grey--text" target="_blank">SmartShopper</a></li>
               </ul>
             </div>
             </v-flex>
@@ -295,7 +225,7 @@
               </ul>
             </div> 
             </v-flex>
-            <v-flex xs12 py-3 text-xs-center white--text>
+            <v-flex xs12 py-3 text-xs-center>
         &copy;2018 — <strong>HIBIKI SUSHI INC.</strong>
         </v-flex>
         </v-layout>
@@ -310,15 +240,14 @@
 
 
 export default {
+  scrollToTop: true,
   data() {
     return {
       clipped: false,
       map: false,
       dialog: false,
-      dialogEmails: false,
       openhours: false,
       drawer: false,
-      fixed: false,
       items: [
         {
           avatar: require("~/static/images/sectionAvatars/price.jpg"),
@@ -452,10 +381,10 @@ export default {
 }
 
 .navDrawerBg {
-  background: rgba(28, 28, 28, 0.8);
+  background: hsla(0, 0%, 11%, 0.8);
 }
 .appBg {
-  background: rgb(17, 17, 17);
+  background: #111111;
 }
 
 .footerItems li {

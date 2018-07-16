@@ -4,19 +4,17 @@
     <h1 class="cursive ma-2">Popular Items</h1>
     <div>
    <div v-swiper:mySwiper="swiperOption">
-    <div class="swiper-wrapper ">
+    <div class="swiper-wrapper">
       <div class="swiper-slide mostpopularBG" v-for="card in cards" :key="card.title">
-        <img :src="card.src" class="itemsize " >
+        <img :src="card.src" class="itemsize" >
         <div class="cursive mostpopular"> {{card.title}}
         </div>
       </div>
-    </div>
-      <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-      <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-    
-  </div>
       </div>
-    
+        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+      </div>
+    </div>
   </v-container>
 </template>
 
