@@ -8,16 +8,16 @@
       <div class="swiper-slide" v-for="customer in customers" :key="customer.name">
         <div class="quotes">
           <p class="quote">
-          "{{customer.quote}}" <br> - {{customer.name}}
-           
+          "{{customer.quote}}" <br> - <span class="name">{{customer.name}} </span>
+          
           <br>
             <img :src="customer.source" style="height: 30px">
           </p>
         </div>
       </div>
       </div>
-        <div class="swiper-button-prev swiper-button-black" style="margin:10px;" slot="button-prev"></div>
-        <div class="swiper-button-next swiper-button-black" style="margin:10px;" slot="button-next"></div>
+        <div class="swiper-button-prev swiper-button-black" style="margin:6px;" slot="button-prev"></div>
+        <div class="swiper-button-next swiper-button-black" style="margin:6px;" slot="button-next"></div>
       </div>
 
   </v-container>
@@ -28,27 +28,41 @@
      data () {
       return {
         customers: [
+         {
+          quote: 'This is one of my favorite sushi Bar in SCV.  All you can it is really good and the food is great. We just celebrate 2 of our technicians birthdays in Hibiki and we all had a great time and enjoyed the food. Our waitress was really nice!!',
+          name: 'Wilmy M.',
+          site: 'Yelp',
+          source: require('static/images/logos/Yelp_Logo.svg')
+        },
+        {
+          quote: 'There is ample seating for dining, booth and table alike and pleasant aesthetic about the interior. The staff are inviting and friendly, and though I arrived at an extremely busy hour with family including two kids they were more than happy to find a booth...',
+          name: 'Devin P. (Local Guide)',
+          site: 'Google reviews',
+          source: require('static/images/logos/Google_2015_logo.svg')
+        },
+        {
+          quote: '...we have always enjoyed our experience as the entire restaurant is all you can eat which works well when you have a family. The spicy tuna crispy chip makes the whole place worthwhile.',
+          name: 'Jay R.',
+          site: 'Google reviews',
+          source: require('static/images/logos/Google_2015_logo.svg')
+        },
         {
           quote: 'Amazing sushi spot! Great sushi and awesome service, this is our go-to spot! Compliments to the chef, and waiters and waitresses that work here.',
           name: 'Eleanor I.',
           site: 'Yelp',
-          src: require('static/images/customer1.png'),
-          source: require('static/images/logos/Yelp_Logo.svg')
-
-        },
-        {
-          quote: 'Love hibiki.  Good all you can eat with a cheap price.  Definitely a go-to sushi spot!',
-          name: 'Laanne H.',
-          site: 'Yelp',
-          src: require('static/images/customer2.png'),
           source: require('static/images/logos/Yelp_Logo.svg')
         },
         {
-          quote: 'Best sushi place in Santa Clarita. Great prices and the food quality. Is great. Love the all you can drink special',
-          name: 'John O.',
-          site: 'Yelp',
-          src: require('static/images/customer3.png'),
-          source: require('static/images/logos/Yelp_Logo.svg')
+          quote: 'The sushi was excellent. The staff was very friendly and attentive. Our order was prepared well and the prices were very reasonable...Definitely coming back though.',
+          name: 'Jacob M. (Local Guide)',
+          site: 'Google reviews',
+          source: require('static/images/logos/Google_2015_logo.svg')
+        },
+        {
+          quote: 'This has become my ONLY sushi spot! I\'ve brought different groups of friends and they all agree best price for great sushi. 4 adults & 2 kids, all you can eat for about $100! We had at least 8 rolls, drinks, tempura everything we could want and then some!',
+          name: 'Sharon H.',
+          site: 'Google reviews',
+          source: require('static/images/logos/Google_2015_logo.svg')
         }
         ],
         swiperOption: {
@@ -98,7 +112,7 @@
 
   .quote {
     width: 90%;
-    height: 150px;
+    height: 175px;
     padding: 10px;
     margin: 10px;
     color: black;
@@ -113,10 +127,8 @@
 
   .name {
     width: 50px;
+    font-weight: bold;
   }
-  .customerphoto {
-    border-radius: 50%;
-    width: 25px;
-  }
+
 
 </style>

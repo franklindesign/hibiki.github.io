@@ -39,27 +39,23 @@
             itemNumber: 1,
             title: 'Rainbow Roll',  
             src: require('static/images/freshrolls/rainbowroll.jpg'),
-            price: '10.95', 
             flex: 3 },
 
           { 
             itemNumber: 2,
-            title: 'Lemonade Roll',
-            src: require('static/images/freshrolls/lemonaderoll.jpg'),
-            price: '10.95', 
+            title: 'Crunch Shrimp Tempura Roll',
+            src: require('static/images/tempurarolls/crunchshrimptempuraroll.jpg'),
             flex: 3 },
 
           { 
             itemNumber: 3,
-            title: 'Mango Mania Roll',
-            src: require('static/images/freshrolls/mangomaniaroll.jpg'),
-            price: '11.95', 
+            title: 'Gyoza Dumplings (5pcs)',
+            src: require('static/images/meatappetizers/gyoza.jpg'),
             flex: 3 },
           { 
             itemNumber: 4,
-            title: 'Sun Burn Roll', 
-            src: require('static/images/freshrolls/sunburnroll.jpg'),
-            price: '11.95', 
+            title: 'Caterpillar Roll', 
+            src: require('static/images/cookedrolls/caterpillarroll.jpg'),
             flex: 3 }
         ]
       }
