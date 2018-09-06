@@ -54,36 +54,35 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-
-        // disable on expiration
-        /* offerOne: 
+export default {
+  data() {
+    return {
+      // disable on expiration
+      /* offerOne: 
           { 
             
             description: 'Lunch Special: 50% Off all premium sushi rolls. (A la carte / dine-in only) from 11:30 AM to 4 PM.',
             duration: 'April 15-19', 
             src: require('static/images/offerImgs/rollsgroup.jpg'),
           }, */
-       /*  offerTwo: 
+      /*  offerTwo: 
           { 
             
             description: 'Sake Discount: 50% Off on all new premium sake bottles.', 
             duration: 'April 12-15',
             src: require('static/images/offerImgs/sakegroup.jpg'),
-          }  */  
-      }
-    }
+          }  */
+    };
   }
+};
 </script>
 
 <style scoped>
 .halfoff {
- position: absolute;
+  position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color:  red;
+  background-color: red;
   color: white;
   padding: 5px;
 }

@@ -4,7 +4,7 @@
       <v-flex xs12>
         <div class="background">
           <p class="text">
-            Sign up for Hibiki Emails, get 10% Off Coupons. 
+            Sign up for Hibiki Emails, get 10% Off Coupons.
           </p>
           <div class="button">
             <v-btn large outline color="white" to="/emails">
@@ -12,29 +12,25 @@
             </v-btn>
           </div>
         </div>
-    </v-flex>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
 
-<script>
-  export default {
-    
-  }
-</script>
 
 <style scoped>
- .background {
-   background: orangered;
-   padding-left: 10px;
-   padding-right: 10px;
- }
- .text {
-   font-size: 20px;
-   padding-top: 10px;
- }
+.background {
+  background: orangered;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
- .button {
-   padding-bottom: 10px;
- }
+.text {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.button {
+  padding-bottom: 10px;
+}
 </style>

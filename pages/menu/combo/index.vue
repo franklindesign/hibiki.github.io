@@ -4,121 +4,106 @@
     <v-layout wrap row>
       <v-flex md4 sm6 lg6>
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
-          <v-card-media 
-              :src="noodlecombo.src"
-              height="300px"
-              >
-              <div class="priceSmall">Lunch</div>
-                <div class="smallPricePosition" v-text="noodlecombo.smallPrice">
-              </div>
-              <div class="priceLarge">Dinner</div>
-              <div class="largePricePosition" v-text="noodlecombo.largePrice">
-              </div>
-            
+          <v-card-media :src="noodlecombo.src" height="300px">
+            <div class="priceSmall">Lunch</div>
+            <div class="smallPricePosition" v-text="noodlecombo.smallPrice">
+            </div>
+            <div class="priceLarge">Dinner</div>
+            <div class="largePricePosition" v-text="noodlecombo.largePrice">
+            </div>
           </v-card-media>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="noodlecombo.title"></div>
               <div v-text="noodlecombo.itemDescription"></div>
               <v-layout row wrap>
-              <v-flex>
-              <v-expansion-panel class="mt-4" >
-                <v-expansion-panel-content>
-                  <div slot="header">Choose One Noodle Dish:</div>
-            <v-card light>
-              <v-card-text>
-         
-                <ul>
-                  <li v-for="noodledish in noodledishes" :key="noodledish">
-                    {{ noodledish }}
-                  </li>
-               
-                  </ul>
-              </v-card-text>
-            </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-               </v-flex>
-               <v-flex>
-              <v-expansion-panel class="mt-4" >
-                <v-expansion-panel-content>
-                  <div slot="header">Choose One Sushi Roll:</div>
-            <v-card light>
-              <v-card-text>
-                  <ul>
-                    <li v-for="sushiroll in sushirolls" :key="sushiroll">
-                      {{ sushiroll }}
-                    </li>
-               
-                  </ul>
-              </v-card-text>
-            </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-               </v-flex>
-               </v-layout>
+                <v-flex>
+                  <v-expansion-panel class="mt-4">
+                    <v-expansion-panel-content>
+                      <div slot="header">Choose One Noodle Dish:</div>
+                      <v-card light>
+                        <v-card-text>
+                          <ul>
+                            <li v-for="noodledish in noodledishes" :key="noodledish">
+                              {{ noodledish }}
+                            </li>
+                          </ul>
+                        </v-card-text>
+                      </v-card>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-flex>
+                <v-flex>
+                  <v-expansion-panel class="mt-4">
+                    <v-expansion-panel-content>
+                      <div slot="header">Choose One Sushi Roll:</div>
+                      <v-card light>
+                        <v-card-text>
+                          <ul>
+                            <li v-for="sushiroll in sushirolls" :key="sushiroll">
+                              {{ sushiroll }}
+                            </li>
+                          </ul>
+                        </v-card-text>
+                      </v-card>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-flex>
+              </v-layout>
             </div>
-          </v-card-title>   
+          </v-card-title>
         </v-card>
       </v-flex>
       <v-flex md4 sm6 lg6>
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
-          <v-card-media 
-              :src="entreecombo.src"
-              height="300px"
-              >
-              <div class="priceSmall">Lunch</div>
-                <div class="smallPricePosition" v-text="entreecombo.smallPrice">
-              </div>
-              <div class="priceLarge">Dinner</div>
-              <div class="largePricePosition" v-text="entreecombo.largePrice">
-              </div>
-            
+          <v-card-media :src="entreecombo.src" height="300px">
+            <div class="priceSmall">Lunch</div>
+            <div class="smallPricePosition" v-text="entreecombo.smallPrice">
+            </div>
+            <div class="priceLarge">Dinner</div>
+            <div class="largePricePosition" v-text="entreecombo.largePrice">
+            </div>
           </v-card-media>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="entreecombo.title"></div>
               <div v-text="entreecombo.itemDescription"></div>
-
-            <v-layout row wrap>
-              <v-flex>
-              <v-expansion-panel class="mt-4" >
-                <v-expansion-panel-content>
-                  <div slot="header">Choose One Entree:</div>
-            <v-card light>
-              <v-card-text>
-         
-                <ul>
-                  <li v-for="entree in entrees" :key="entree">
-                    {{ entree }}
-                  </li>
-               
-                  </ul>
-              </v-card-text>
-            </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-               </v-flex>
-               <v-flex>
-              <v-expansion-panel class="mt-4" >
-                <v-expansion-panel-content>
-                  <div slot="header">Choose One Sushi Roll:</div>
-            <v-card light>
-              <v-card-text>
-                  <ul>
-                    <li v-for="sushiroll in sushirolls" :key="sushiroll">
-                      {{ sushiroll }}
-                    </li>
-               
-                  </ul>
-              </v-card-text>
-            </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-               </v-flex>
-               </v-layout>
+              <v-layout row wrap>
+                <v-flex>
+                  <v-expansion-panel class="mt-4">
+                    <v-expansion-panel-content>
+                      <div slot="header">Choose One Entree:</div>
+                      <v-card light>
+                        <v-card-text>
+                          <ul>
+                            <li v-for="entree in entrees" :key="entree">
+                              {{ entree }}
+                            </li>
+                          </ul>
+                        </v-card-text>
+                      </v-card>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-flex>
+                <v-flex>
+                  <v-expansion-panel class="mt-4">
+                    <v-expansion-panel-content>
+                      <div slot="header">Choose One Sushi Roll:</div>
+                      <v-card light>
+                        <v-card-text>
+                          <ul>
+                            <li v-for="sushiroll in sushirolls" :key="sushiroll">
+                              {{ sushiroll }}
+                            </li>
+                          </ul>
+                        </v-card-text>
+                      </v-card>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                </v-flex>
+              </v-layout>
             </div>
-          </v-card-title>   
+          </v-card-title>
         </v-card>
       </v-flex>
     </v-layout>
@@ -126,101 +111,100 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        noodledishes: [
-          'Udon Soup', 
-          'Yaki Udon',
-          'Yaki Soba', 
-          'Miso or Spicy Ramen' 
-          ],
+export default {
+  data() {
+    return {
+      noodledishes: [
+        "Udon Soup",
+        "Yaki Udon",
+        "Yaki Soba",
+        "Miso or Spicy Ramen"
+      ],
 
-        sushirolls: [
-          'California Roll', 
-          'Spicy Tuna Roll', 
-          'Yellowtail Roll', 
-          'Salmon Roll', 
-          'Tuna Roll', 
-          'Albacore Roll', 
-          'Vegetable Roll' 
-          ],
+      sushirolls: [
+        "California Roll",
+        "Spicy Tuna Roll",
+        "Yellowtail Roll",
+        "Salmon Roll",
+        "Tuna Roll",
+        "Albacore Roll",
+        "Vegetable Roll"
+      ],
 
-        entrees: [
-          'Chicken Teriyaki', 
-          'Chicken Cutlet', 
-          'Spicy Chicken', 
-          'Beef Cutlet', 
-          'Salmon Teriyaki (+3.50)', 
-          'Sukiyaki Beef', 
-          'Combination Tempura', 
-          'Beef Teriyaki', 
-          'Fried Rice (Shrimp, Beef or Chicken)'
-          ],
-        
-        noodlecombo: 
-          { 
-            title: 'Noodle Combo',
-            itemDescription: 'Choose ONE Noodle Dish & ONE Sushi Roll.', 
-            src: require('static/images/combo/noodlecombo.jpg'),
-            smallPrice: '11.95',
-            largePrice: '14.95'
-          },
+      entrees: [
+        "Chicken Teriyaki",
+        "Chicken Cutlet",
+        "Spicy Chicken",
+        "Beef Cutlet",
+        "Salmon Teriyaki (+3.50)",
+        "Sukiyaki Beef",
+        "Combination Tempura",
+        "Beef Teriyaki",
+        "Fried Rice (Shrimp, Beef or Chicken)"
+      ],
 
-        entreecombo:
-          { 
-            title: 'Entree Combo',
-            itemDescription: 'Choose ONE Entree & ONE Sushi Roll. Served with miso soup & salad.', 
-            src: require('static/images/combo/entreecombo.jpg'),
-            smallPrice: '11.95',
-            largePrice: '14.95'
-          }
+      noodlecombo: {
+        title: "Noodle Combo",
+        itemDescription: "Choose ONE Noodle Dish & ONE Sushi Roll.",
+        src: require("static/images/combo/noodlecombo.jpg"),
+        smallPrice: "11.95",
+        largePrice: "14.95"
+      },
+
+      entreecombo: {
+        title: "Entree Combo",
+        itemDescription:
+          "Choose ONE Entree & ONE Sushi Roll. Served with miso soup & salad.",
+        src: require("static/images/combo/entreecombo.jpg"),
+        smallPrice: "11.95",
+        largePrice: "14.95"
       }
-    }
+    };
   }
+};
 </script>
 
 <style scoped>
-
 .cardBack {
-background: rgb(29, 29, 29);
+  background: rgb(29, 29, 29);
 }
-
 
 .smallPricePosition {
-position: absolute;
-bottom: 8px;
-right: 65px;
-background: black;
-padding: 5px;
+  position: absolute;
+  bottom: 8px;
+  right: 65px;
+  background: black;
+  padding: 5px;
 }
+
 .largePricePosition {
-position: absolute;
-bottom: 8px;
-right: 16px;
-background: black;
-padding: 5px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background: black;
+  padding: 5px;
 }
 
 .priceSmall {
-position: absolute;
-bottom: 34px;
-right: 65px;
-color:goldenrod;
-padding: 5px;
-font-size: 12px;
-width: 45px;
-background-color: white;
+  position: absolute;
+  bottom: 34px;
+  right: 65px;
+  color: goldenrod;
+  padding: 5px;
+  font-size: 12px;
+  width: 45px;
+  background-color: white;
 }
+
 .priceLarge {
-position: absolute;
-bottom: 34px;
-right: 16px;
-color: goldenrod;
-padding: 5px;
-font-size: 12px;
-width: 45px;
-background-color: white;
+  position: absolute;
+  bottom: 34px;
+  right: 16px;
+  color: goldenrod;
+  padding: 5px;
+  font-size: 12px;
+  width: 45px;
+  background-color: white;
 }
 
 .beerLogo {
@@ -235,5 +219,4 @@ li {
   list-style-type: none;
   margin-top: 10px;
 }
-
 </style>
