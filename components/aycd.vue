@@ -19,7 +19,7 @@
       </v-flex>
       <v-flex xs12>
         <div class="text">
-          <p>Valid price thru Sept 26. AYCE Customers Only.</p>
+          <p>Valid price thru Oct. 3 (AYCE Customers Only)</p>
         </div>  
       </v-flex>
     </v-layout>

@@ -7,7 +7,7 @@
             Sign up for Hibiki Emails, get 10% Off Coupons.
           </p>
           <div class="button">
-            <v-btn large outline color="white" to="/emails">
+            <v-btn large color="black" to="/emails">
               Sign Up
             </v-btn>
           </div>
@@ -20,13 +20,17 @@
 
 <style scoped>
 .background {
-  background: orangered;
+  margin: auto;
+  width: 60vw;
+  background: rgb(255, 213, 0);
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 10px;
 }
 
 .text {
-  font-size: 20px;
+  color: black;
+  font-size: 2em;
   padding-top: 10px;
 }
 
