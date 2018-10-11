@@ -82,16 +82,16 @@ export default {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: red;
-  color: white;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
   padding: 5px;
 }
 .duration {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   padding: 5px;
 }
 </style>

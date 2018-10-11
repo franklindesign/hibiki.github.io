@@ -128,18 +128,18 @@
   
     <!-- Begin Footer -->
     <v-footer dark class="grey darken-4 wrapper" height="auto">
-      <div class="contain ">
+      <div class="contain footerMargin">
         <v-layout row wrap>
-          <v-flex xs12 md3 lg3>
-            <div class="footerItems ">
+          <v-flex xs12 sm3 md3 lg3>
+            <div class="footerItems footerAddress">
               <h3>HIBIKI SUSHI & BAR</h3>
               <p class="grey--text mt-3">27625 Shangri La Dr. <br> Canyon Country, CA. 91351<br> </p>
               <a @click="map = true">View Location</a> <br>
               <p class="grey--text pt-3">(661) 298-0273</p>
             </div>
           </v-flex>
-          <v-flex xs4 md3 lg3>
-            <div class="footerItems  ">
+          <v-flex xs4 sm3 md3 lg3>
+            <div class="footerItems">
               <ul style="list-style-type:none">
                 <li>
                   <h4>HIBIKI</h4>
@@ -158,8 +158,8 @@
               </ul>
             </div>
           </v-flex>
-          <v-flex xs4 md3 lg3>
-            <div class="footerItems ">
+          <v-flex xs4 sm3 md3 lg3>
+            <div class="footerItems">
               <ul style="list-style-type:none">
                 <li>
                   <h4>PARTNERS</h4>
@@ -172,7 +172,7 @@
               </ul>
             </div>
           </v-flex>
-          <v-flex xs4 md3 lg3>
+          <v-flex xs4 sm3 md3 lg3>
             <div class="footerItems">
               <ul style="list-style-type:none">
                 <li>
@@ -317,7 +317,7 @@ export default {
 }
 
 .navDrawerBg {
-  background: hsla(0, 0%, 11%, 0.8);
+  background-color: hsla(0, 0%, 11%, 0.8);
 }
 
 .appBg {
@@ -336,8 +336,18 @@ a:hover {
   font-weight: bold;
 }
 
+.footerMargin {
+  margin-top: 10px;
+}
 .footerItems {
-  margin: 30px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .footerAddress {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 </style>
 

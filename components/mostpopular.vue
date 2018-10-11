@@ -110,7 +110,7 @@ export default {
 .mostpopular {
   font-size: 1em;
   margin: 10px;
-  color: white;
+  color: #ffffff;
 }
 
 .mostpopularBG {

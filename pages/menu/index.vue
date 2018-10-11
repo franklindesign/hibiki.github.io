@@ -6,10 +6,10 @@
 
     <div>
       <v-layout row wrap mt-2>
-        <v-flex xs12 sm6 md4 l4>
+        <v-flex xs12 sm6 md4 lg4 ma-2>
           <div class="gradientBorder">
             <div class="pricemargin">
-              <h2 style="color:yellow">ALL YOU CAN EAT: LUNCH</h2>
+              <h2 class="ayce">ALL YOU CAN EAT: LUNCH</h2>
               <h4>75 Min.</h4>
               <p>Monday through Friday (11:30 AM - 3 PM)</p>
               <p>
@@ -23,10 +23,10 @@
             </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4 lg4>
+        <v-flex xs12 sm6 md4 lg4 ma-2>
           <div class="gradientBorder">
             <div class="pricemargin">
-              <h2 style="color: yellow">ALL YOU CAN EAT:<br>
+              <h2 class="ayce">ALL YOU CAN EAT:<br>
               DINNER/WEEKEND & HOLIDAYS</h2>
               <h4>90 Min.</h4>
               <p>
@@ -40,10 +40,10 @@
               </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm12 md4 l4 >
+        <v-flex xs12 sm6 md4 lg4 ma-2>
           <div class="gradientBorder" >
             <div class="pricemargin">
-              <h2 style="color: orange">ALL YOU CAN EAT: SUSHI & SASHIMI (ONLY)</h2>
+              <h2 class="ayce-sashimi">ALL YOU CAN EAT: SUSHI & SASHIMI (ONLY)</h2>
               <h4>75 Min.</h4>
               <br>
               <p>
@@ -52,6 +52,22 @@
                 </ul>
               </p>
               <p> Order from 23 options of Sushi/Sashimi.</p>
+            </div>
+          </div>
+        </v-flex>
+        <v-flex xs12 sm6 md4 lg4 ma-2>
+          <div class="gradientBorder" >
+            <div class="pricemargin">
+              <h2 class="aycd">+ ALL YOU CAN DRINK: SAPPORO</h2>
+              <h4>75 Min.</h4>
+              <br>
+              <p>
+                <ul>
+                  <li>Additional per AYCE customer: +8.95</li>
+                  <li>ONE (.01) CENT REFILLS</li>
+                  <li>For drinking age only+ </li>
+                </ul>
+              </p>
             </div>
           </div>
         </v-flex>
@@ -67,29 +83,31 @@ export default {
 </script>
 
 <style scoped>
+.ayce {
+  color: #ffd700;
+}
+.ayce-sashimi {
+  color: #ff4500;
+}
+
+.aycd {
+  color: #ff8400;
+}
+
 p li {
   list-style-type: none;
 }
 
 .gradientBorder {
-  height: 350px;
-  margin: 10px;
+  height: 100%;
   padding: 5px;
-  border-top: 3px;
-  border-left: 3px solid #2c429b;
-  border-right: 3px solid #c92038;
   border-radius: 5px;
-  background-position: 0 0, 0 100%;
-  background-repeat: no-repeat;
-  -webkit-background-size: 100% 20px;
-  -moz-background-size: 100% 20px;
-  background-size: 100% 5px;
-  background-image: linear-gradient(to right, #2c429b 0%, #c92038 100),
-    linear-gradient(to right, #2c429b 0%, #c92038 100%);
+  border: 1px solid rgb(53, 53, 53);
+  background-color: rgb(12, 12, 12);
 }
 
 .pricemargin {
-  margin: 50px 20px 50px 20px;
+  margin: 20px;
 }
 
 h2 {

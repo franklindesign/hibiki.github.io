@@ -8,9 +8,9 @@
         <div class="swiper-slide" v-for="customer in customers" :key="customer.name">
           <div class="quotes">
             <p class="quote">
-              "{{customer.quote}}" <br> - <span class="name">{{customer.name}} </span>
-              <br>
-              <img :src="customer.source" style="height: 30px">
+              "{{customer.quote}}"  <br><br>- <span class="name">{{customer.name}} </span>
+              
+              <img :src="customer.source" class="customerSource">
             </p>
           </div>
         </div>
@@ -112,23 +112,27 @@ export default {
 </script>
 
 <style scoped>
+.customerSource {
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+}
 .quote {
   width: 90%;
-  height: 175px;
+  height: auto;
   padding: 10px;
   margin: 10px;
-  color: black;
+  color: #000000;
 }
 
 .quotes {
   margin: 10px;
   padding: 20px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.1);
 }
 
 .name {
-  width: 50px;
   font-weight: bold;
 }
 </style>

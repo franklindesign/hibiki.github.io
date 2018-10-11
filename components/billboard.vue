@@ -72,7 +72,7 @@ img {
 
 .ayce {
   font-size: 40px;
-  color: gold;
+  color: #ffd700;
 }
 
 @media only screen and (max-width: 960px) {

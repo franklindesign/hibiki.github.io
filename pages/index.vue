@@ -4,7 +4,7 @@
       <billboard />
     </section>
     <section>
-      <aycd />
+      <!-- <aycd /> -->
       <signup />
     </section>
     <section>    
@@ -27,7 +27,7 @@ import mostordered from "~/components/mostordered.vue";
 import customers from "~/components/customers.vue";
 import delivery from "~/components/delivery.vue";
 import signup from "~/components/signup.vue";
-import aycd from "~/components/aycd.vue";
+// import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
 
 export default {
@@ -37,8 +37,8 @@ export default {
     mostordered,
     customers,
     delivery,
-    signup,
-    aycd
+    signup
+    // aycd
     // specialoffers
   }
 };
@@ -64,7 +64,7 @@ export default {
 }
 
 .delivery {
-  background-color: gold;
+  background-color: #FFD700;
   height: auto;
 }
 

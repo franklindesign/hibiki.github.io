@@ -226,9 +226,9 @@ export default {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 25px;
-  color: black;
+  color: #000000;
   padding: 4px;
   font-size: 12px;
 }
@@ -237,7 +237,7 @@ export default {
   position: absolute;
   bottom: 8px;
   right: 65px;
-  background: black;
+  background: #000000;
   width: 45px;
   padding: 5px;
 }
@@ -246,7 +246,7 @@ export default {
   position: absolute;
   bottom: 8px;
   right: 16px;
-  background: black;
+  background: #000000;
   width: 45px;
   padding: 5px;
 }
@@ -255,22 +255,22 @@ export default {
   position: absolute;
   bottom: 34px;
   right: 65px;
-  color: black;
+  color: #000000;
   padding: 5px;
   font-size: 12px;
   width: 45px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .priceLarge {
   position: absolute;
   bottom: 34px;
   right: 16px;
-  color: black;
+  color: #000000;
   padding: 5px;
   font-size: 12px;
   width: 45px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .beerLogo {

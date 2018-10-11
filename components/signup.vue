@@ -22,14 +22,14 @@
 .background {
   margin: auto;
   width: 60vw;
-  background: rgb(255, 213, 0);
+  background: rgb(255, 215, 0);
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
 }
 
 .text {
-  color: black;
+  color: #000000;
   font-size: 2em;
   padding-top: 10px;
 }

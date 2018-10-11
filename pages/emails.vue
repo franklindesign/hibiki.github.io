@@ -54,7 +54,7 @@
 
 <style scoped>
 #mc_embed_signup {
-  background: black;
+  background: #000000;
   clear: both;
   font: 14px Helvetica, Arial, sans-serif;
 }

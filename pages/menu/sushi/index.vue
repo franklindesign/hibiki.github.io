@@ -181,7 +181,7 @@ export default {
 
 <style scoped>
 .tablebg {
-  background: black;
+  background: #000000;
 }
 
 .bgcontainer {

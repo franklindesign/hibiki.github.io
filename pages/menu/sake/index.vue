@@ -271,12 +271,12 @@ export default {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 25px;
-  color: black;
+  color: #000000;
   padding: 4px;
   font-size: 12px;
-  background: white;
+  background: #ffffff;
 }
 </style>
 

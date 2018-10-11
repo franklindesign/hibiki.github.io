@@ -50,7 +50,7 @@ export default {
   margin: auto;
   width: 50%;
   padding: 1em;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
 }
 .price {
   margin-left: 25px;
