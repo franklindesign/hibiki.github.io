@@ -5,6 +5,7 @@
     </section>
     <section>
       <!-- <aycd /> -->
+      <worldseries />
       <signup />
     </section>
     <section>    
@@ -27,6 +28,7 @@ import mostordered from "~/components/mostordered.vue";
 import customers from "~/components/customers.vue";
 import delivery from "~/components/delivery.vue";
 import signup from "~/components/signup.vue";
+import worldseries from "~/components/worldseries.vue";
 // import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
 
@@ -37,7 +39,8 @@ export default {
     mostordered,
     customers,
     delivery,
-    signup
+    signup,
+    worldseries
     // aycd
     // specialoffers
   }

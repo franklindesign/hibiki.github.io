@@ -5,11 +5,11 @@
   
     <!-- Begin Drawer Nav -->
     <v-navigation-drawer temporary fixed v-model="drawer" right class="navDrawerBg" app>
-      <v-btn transparent fixed right flat fab @click.stop="drawer = !drawer" class="mt-3 mr-1">
+      <v-btn transparent fixed right flat fab @click.stop="drawer = !drawer" class="mt-2 mr-1">
         <v-icon>close</v-icon>
       </v-btn>
       <v-list subheader dense>
-        <v-list-tile avatar router to="/" class="mt-3">
+        <v-list-tile avatar router to="/" class="mt-2">
           <v-list-tile-avatar>
             <v-icon>
               home
@@ -37,8 +37,8 @@
   
     <!-- Begin Nav Desktop Menu -->
     <v-toolbar fixed app :clipped-left="clipped" class="black">
-      <div class="ml-5 mt-2">
-        <nuxt-link to="/"><img :src="logo" height="50%" width="50%" alt="Hibiki Sushi & Bar"></nuxt-link>
+      <div class="mt-2">
+        <nuxt-link to="/"><img :src="logo" height="40%" width="40%" alt="Hibiki Sushi & Bar"></nuxt-link>
       </div>
       <v-spacer></v-spacer>
       <v-btn absolute dark fab bottom right color="red darken-3" @click.stop="drawer = !drawer" class="mr-3 hidden-md-and-up">

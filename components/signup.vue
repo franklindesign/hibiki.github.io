@@ -37,4 +37,10 @@
 .button {
   padding-bottom: 10px;
 }
+
+@media only screen and (max-width: 480px) {
+  .background {
+    width: 90vw;
+  }
+}
 </style>
