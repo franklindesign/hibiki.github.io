@@ -3,7 +3,7 @@
     <div class="billboard">
     <v-img :src="billboard.src"></v-img>
     <h1 class="mt-5 greeting">It's our 10 Year Anniversary!</h1>
-    <p class="mt-3 greeting">To celebrate our 10th year serving All-You-Can-Eat in Santa Clarita Valley, we've chosen over 20 customer favorites in a limited menu starting at $17. Pick as many items you want for lunch or dinner!</p>
+    <p class="mt-3 greeting">To celebrate our 10th year serving All-You-Can-Eat in Santa Clarita Valley, we've chosen over 20 customer favorites in a limited AYCE menu starting at $17. Pick as many items you want for lunch or dinner!</p>
     </div>
     <div class="aycdbeer">
       <v-img :src="aycd.src"></v-img>

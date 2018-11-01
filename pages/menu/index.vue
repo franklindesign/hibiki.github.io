@@ -8,7 +8,7 @@
         <v-flex xs12 sm6 md4 lg4 ma-2>
           <div class="gradientBorder">
             <div class="pricemargin">
-              <h2 class="ayce">Limited Menu</h2>
+              <h2 class="ayce">Limited AYCE Menu</h2>
               <h4>Dine-in only. 60 Min.</h4>
     
               <p>
