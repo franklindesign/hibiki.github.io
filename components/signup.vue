@@ -2,12 +2,12 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12>
-        <div class="background">
+        <div>
           <p class="text">
             Sign up for Hibiki Emails, get 10% Off Coupons.
           </p>
           <div class="button">
-            <v-btn large color="black" to="/emails">
+            <v-btn large to="/emails" color="orange">
               Sign Up
             </v-btn>
           </div>
@@ -19,23 +19,10 @@
 
 
 <style scoped>
-.background {
-  margin: auto;
-  width: 60vw;
-  background: rgb(255, 215, 0);
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10px;
-}
-
 .text {
-  color: #000000;
+  color: #ffffff;
   font-size: 2em;
   padding-top: 10px;
-}
-
-.button {
-  padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 480px) {

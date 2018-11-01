@@ -3,7 +3,7 @@
     <h1 class="cursive ma-2">Japanese Beer</h1>
     <h4 class="caption ma-2">Ask our servers for item availability. For Legal Drinking Age Only+</h4>
     <v-flex xs12 md12 sm12 lg12>
-      <v-card-media contain height="200px" :src="aycdBeer.src" class="mt-4 mb-4">
+      <v-card-media contain height="400px" :src="aycdBeer.src" class="mt-4 mb-4">
       </v-card-media>
     </v-flex>
     <v-layout wrap row>
@@ -52,10 +52,7 @@ export default {
       aycdBeer: {
         title: "All You Can Drink: Sapporo Draft Beer",
         itemDescription: "One Cent Refills",
-        src: require("static/images/beer/aycd.png"),
-        price: "8.95",
-        bottlesize: "16.oz (Mug)",
-        alcohol: "4.9%",
+        src: require("static/images/anniversary/aycd_695.png"),
         flex: 12
       },
       cards: [

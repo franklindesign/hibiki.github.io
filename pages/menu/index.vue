@@ -1,6 +1,33 @@
 <template>
-  <div >
+  <div>
     <div class="centerTitle480">
+    <h1 class="cursive ma-2">10 Year Anniversary:</h1>
+    </div>
+    <div>
+      <v-layout row wrap mt-2>
+        <v-flex xs12 sm6 md4 lg4 ma-2>
+          <div class="gradientBorder">
+            <div class="pricemargin">
+              <h2 class="ayce">Limited Menu</h2>
+              <h4>Dine-in only. 60 Min.</h4>
+    
+              <p>
+                <ul class="mt-3">
+                  <li>Lunch: $17 (11:30 AM - 4 PM)</li>
+                  <li>Dinner: $21</li>
+
+                
+                </ul>
+              </p>
+              <p> All Items listed on the order sheet are included.</p>
+            </div>
+          </div>
+        </v-flex>
+      </v-layout>
+        </div>
+
+
+    <div class="centerTitle480 mt-5">
     <h1 class="cursive ma-2">All You Can Eat: Pricing</h1>
     </div>
 
@@ -11,7 +38,7 @@
             <div class="pricemargin">
               <h2 class="ayce">ALL YOU CAN EAT: LUNCH</h2>
               <h4>75 Min.</h4>
-              <p>Monday through Friday (11:30 AM - 3 PM)</p>
+              <p>Monday through Friday (11:30 AM - 4 PM)</p>
               <p>
                 <ul>
                   <li>Adults: 24.95</li>
@@ -63,7 +90,7 @@
               <br>
               <p>
                 <ul>
-                  <li>Additional per AYCE customer: +8.95</li>
+                  <li>Additional per AYCE customer: +6.95</li>
                   <li>ONE (.01) CENT REFILLS</li>
                   <li>For drinking age only+ </li>
                 </ul>
