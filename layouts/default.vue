@@ -306,6 +306,7 @@ export default {
 
 <style scoped>
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+
 .wrapper {
   justify-content: center;
 }

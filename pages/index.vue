@@ -2,18 +2,18 @@
   <div>
     <section class="hero">
       <!-- <billboard /> -->
-      <anniversary />
+      <anniversary/>
     </section>
     <section>
       <!-- <aycd /> -->
-      <signup />
+      <signup/>
     </section>
-    <section>    
-      <mostpopular />
-      <mostordered />
+    <section>
+      <prices/>
+      <mostpopular/>
     </section>
     <section class="customers">
-      <customers />
+      <customers/>
     </section>
     <section class="delivery">
       <delivery/>
@@ -24,23 +24,25 @@
 <script>
 import billboard from "~/components/billboard.vue";
 import mostpopular from "~/components/mostpopular.vue";
-import mostordered from "~/components/mostordered.vue";
+// import mostordered from "~/components/mostordered.vue";
 import customers from "~/components/customers.vue";
 import delivery from "~/components/delivery.vue";
 import signup from "~/components/signup.vue";
 import anniversary from "~/components/anniversary.vue";
 // import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
+import prices from "~/components/prices.vue";
 
 export default {
   components: {
     billboard,
     mostpopular,
-    mostordered,
+    // mostordered,
     customers,
     delivery,
     signup,
-    anniversary
+    anniversary,
+    prices
     // aycd
     // specialoffers
   }

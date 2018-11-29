@@ -1,19 +1,18 @@
 <template>
   <v-container>
-    
     <h1 class="cursive ma-2">Popular Items</h1>
     <div>
-   <div v-swiper:mySwiper="swiperOption">
-    <div class="swiper-wrapper ">
-      <div class="swiper-slide mostpopularBG itemHover" v-for="card in cards" :key="card.title">
-        <img :src="card.src" class="itemsize " >
-        <div class="cursive mostpopular"> {{card.title}}
+      <div v-swiper:mySwiper="swiperOption">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mostpopularBG itemHover" v-for="card in cards" :key="card.title">
+            <img :src="card.src" class="itemsize">
+            <div class="cursive mostpopular">{{card.title}}</div>
+          </div>
         </div>
       </div>
-      </div>
-        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-      </div>
+      <p class="swipeCards">
+        <br>&#x2194;
+      </p>
     </div>
   </v-container>
 </template>
@@ -61,14 +60,6 @@ export default {
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: false,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
         breakpoints: {
           3840: {
             slidesPerView: 4,
@@ -111,6 +102,12 @@ export default {
   font-size: 1em;
   margin: 10px;
   color: #ffffff;
+}
+
+.swipeCards {
+  text-align: center;
+  font-size: 2em;
+  margin-top: -45px;
 }
 
 .mostpopularBG {
