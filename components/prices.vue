@@ -21,9 +21,6 @@
             <p class="item">{{menu.dining}}</p>
             <p class="item">{{menu.timeLimit}}</p>
             <p class="item">{{menu.other}}</p>
-            <div>
-              <v-btn color="info">View Menu</v-btn>
-            </div>
           </div>
         </div>
       </div>
@@ -39,17 +36,17 @@ export default {
   data() {
     return {
       menus: [
-        {
-          name: "Limited Menu",
-          price1: "$17",
-          customerA: "/ lunch",
-          price2: "$21",
-          customerB: "/ dinner",
-          items: "42 Items",
-          dining: "Dine-in only",
-          timeLimit: "60 minutes",
-          other: "Babies (0-3) eat for free"
-        },
+        // {
+        //   name: "Limited Menu",
+        //   price1: "$17",
+        //   customerA: "/ lunch",
+        //   price2: "$21",
+        //   customerB: "/ dinner",
+        //   items: "42 Items",
+        //   dining: "Dine-in only",
+        //   timeLimit: "60 minutes",
+        //   other: "Babies (0-3) eat for free"
+        // },
         {
           name: "Lunch (Weekdays)",
           price1: "$24.95",

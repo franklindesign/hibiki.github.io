@@ -2,11 +2,10 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12>
-        <div>
+        <div class="background-sign">
           <p class="text">Sign up for Hibiki Emails, get 10% Off Coupons.</p>
           <div class="button">
-            <v-btn large to="/emails" class="red">Sign Up</v-btn>
-            <hr class="new1">
+            <v-btn large to="/emails" color="#C62828">Sign Up</v-btn>
           </div>
         </div>
       </v-flex>
@@ -16,6 +15,11 @@
 
 
 <style scoped>
+.background-sign {
+  background-color: #303030;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 hr.new1 {
   border-top: 1px solid #ffd700;
   margin-top: 3em;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="centerTitle480">
+    <!-- <div class="centerTitle480">
     <h1 class="cursive ma-2">10 Year Anniversary:</h1>
     </div>
     <div>
@@ -15,8 +15,6 @@
                 <ul class="mt-3">
                   <li>Lunch: $17 (11:30 AM - 4 PM)</li>
                   <li>Dinner: $21</li>
-
-                
                 </ul>
               </p>
               <p> All Items listed on the order sheet are included.</p>
@@ -24,7 +22,7 @@
           </div>
         </v-flex>
       </v-layout>
-        </div>
+        </div> -->
 
 
     <div class="centerTitle480 mt-5">
