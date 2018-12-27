@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="cursive ma-2">Popular Items</h1>
+    <h1 class="cursive ma-2">Most Liked Items</h1>
     <div>
       <div v-swiper:mySwiper="swiperOption">
         <div class="swiper-wrapper">
@@ -23,36 +23,28 @@ export default {
     return {
       cards: [
         {
-          title: "Snow Roll",
-          src: require("static/images/cookedrolls/snowroll.jpg")
-        },
-        {
-          title: "Fire Fighter Roll",
-          src: require("static/images/freshrolls/firefighterroll.jpg")
+          title: "Garlic Edamame",
+          src: require("static/images/vegetableappetizers/garlicedamame.jpg")
         },
         {
           title: "Angie Roll",
           src: require("static/images/freshrolls/angieroll.jpg")
         },
         {
-          title: "Sean's Roll",
-          src: require("static/images/tempurarolls/seanroll.jpg")
+          title: "Fire Fighter Roll",
+          src: require("static/images/freshrolls/firefighterroll.jpg")
         },
         {
-          title: "Eskimo Roll",
-          src: require("static/images/cookedrolls/eskimoroll.jpg")
+          title: "Ramen",
+          src: require("static/images/udonsoupramen/ramen.jpg")
         },
         {
-          title: "Salmon Lover Roll",
-          src: require("static/images/cookedrolls/salmonloverroll.jpg")
+          title: "Beef Yaki Udon/Soba",
+          src: require("static/images/stirfriednoodles/beefyakiudonsoba.jpg")
         },
         {
-          title: "Crispy Chip",
-          src: require("static/images/seafoodappetizers/crispychip.jpg")
-        },
-        {
-          title: "Sourpatch Roll",
-          src: require("static/images/freshrolls/sourpatchroll.jpg")
+          title: "Sun Burn Roll",
+          src: require("static/images/freshrolls/sunburnroll.jpg")
         }
       ],
       swiperOption: {

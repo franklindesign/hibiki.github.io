@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div style="margin-top:15px">
-      <h1 class="cursive black--text ma-2">Customer Love &#x1F497;</h1>
+      <h1 class="cursive black--text ma-2">Customer Reviews &#x1F497;</h1>
     </div>
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
@@ -32,24 +32,38 @@ export default {
       customers: [
         {
           quote:
-            "Amazing sushi spot! Great sushi and awesome service, this is our go-to spot! Compliments to the chef, and waiters and waitresses that work here.",
-          name: "Eleanor I.",
+            "First of all this is phenomenal sushi spot and the employees are EXTREMELY hustling. All the past poor report you read on Yelp you must understand that a franchise like this is extremely gnarly to run. I love the sushi here and the draft beer is great too!! Oh, btw it's $0.01 for ALL YOU CAN DRINK refill. That's right ALL YOU CAN DRINK ONE CENT BEER REFILL!!!!",
+          name: "Brian P.",
           site: "Yelp",
           source: require("static/images/logos/Yelp_Logo.svg")
         },
         {
           quote:
-            "The sushi was excellent. The staff was very friendly and attentive. Our order was prepared well and the prices were very reasonable...Definitely coming back though.",
-          name: "Jacob M. (Local Guide)",
+            "Amazing! Went in 30 mins before they were about to close so I felt bad and on top of that I ordered about 12 rolls for take out and they provided the best customer service! The sushi was amazing and we were beyond satisfied with the service and food. Thank you guys so much for taking care of us!! Definitely recommend this spot.",
+          name: "Matthew A.",
+          site: "Yelp",
+          source: require("static/images/logos/Yelp_Logo.svg")
+        },
+        {
+          quote:
+            "The food was Outstanding, filling, and absolutely delicious...The cost was also amazingly affordable trust me we ate more then they probly would like this to have eaten",
+          name: "Scott Stark",
           site: "Google reviews",
           source: require("static/images/logos/Google_2015_logo.svg")
         },
         {
           quote:
-            "This has become my ONLY sushi spot! I've brought different groups of friends and they all agree best price for great sushi. 4 adults & 2 kids, all you can eat for about $100! We had at least 8 rolls, drinks, tempura everything we could want and then some!",
-          name: "Sharon H.",
+            "Sushi was exceptional, did all you can eat (AYCE). Service was alright, but did I mention the sushi was excellent!!! We have been here many times before but this visit was one of the best.",
+          name: "David Muraoka",
           site: "Google reviews",
           source: require("static/images/logos/Google_2015_logo.svg")
+        },
+        {
+          quote:
+            "This is my favorite sushi place. Their sushi rolls are one of the best and their all you can eat deal is great. This place is quite big, lots of parking space, and  nice ambiance. Lindsay is the best server you can get, she always has a friendly smile and always making sure you are doing fine. Thanks for making our visit super awesome Lindsay. This is a place my husband and I frequently visit because it's very delicious. They also take 10% off coupons that you can print out. Check them out in Instagram.",
+          name: "Jen M.",
+          site: "Yelp",
+          source: require("static/images/logos/Yelp_Logo.svg")
         }
       ],
       swiperOption: {
