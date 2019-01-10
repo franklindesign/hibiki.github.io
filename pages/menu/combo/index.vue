@@ -6,11 +6,9 @@
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
           <v-card-media :src="noodlecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
-            <div class="smallPricePosition" v-text="noodlecombo.smallPrice">
-            </div>
+            <div class="smallPricePosition" v-text="noodlecombo.smallPrice"></div>
             <div class="priceLarge">Dinner</div>
-            <div class="largePricePosition" v-text="noodlecombo.largePrice">
-            </div>
+            <div class="largePricePosition" v-text="noodlecombo.largePrice"></div>
           </v-card-media>
           <v-card-title primary-title>
             <div>
@@ -18,15 +16,16 @@
               <div v-text="noodlecombo.itemDescription"></div>
               <v-layout row wrap>
                 <v-flex>
-                  <v-expansion-panel class="mt-4">
+                  <v-expansion-panel class="mt-4 onTop">
                     <v-expansion-panel-content>
-                      <div slot="header">Choose One Noodle Dish:</div>
+                      <div slot="header">Choose 1 Noodle Dish:</div>
                       <v-card light>
                         <v-card-text>
                           <ul>
-                            <li v-for="noodledish in noodledishes" :key="noodledish">
-                              {{ noodledish }}
-                            </li>
+                            <li
+                              v-for="noodledish in noodledishes"
+                              :key="noodledish"
+                            >{{ noodledish }}</li>
                           </ul>
                         </v-card-text>
                       </v-card>
@@ -36,13 +35,11 @@
                 <v-flex>
                   <v-expansion-panel class="mt-4">
                     <v-expansion-panel-content>
-                      <div slot="header">Choose One Sushi Roll:</div>
+                      <div slot="header">Choose 1 Regular Roll:</div>
                       <v-card light>
                         <v-card-text>
                           <ul>
-                            <li v-for="sushiroll in sushirolls" :key="sushiroll">
-                              {{ sushiroll }}
-                            </li>
+                            <li v-for="sushiroll in sushirolls" :key="sushiroll">{{ sushiroll }}</li>
                           </ul>
                         </v-card-text>
                       </v-card>
@@ -58,11 +55,9 @@
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
           <v-card-media :src="entreecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
-            <div class="smallPricePosition" v-text="entreecombo.smallPrice">
-            </div>
+            <div class="smallPricePosition" v-text="entreecombo.smallPrice"></div>
             <div class="priceLarge">Dinner</div>
-            <div class="largePricePosition" v-text="entreecombo.largePrice">
-            </div>
+            <div class="largePricePosition" v-text="entreecombo.largePrice"></div>
           </v-card-media>
           <v-card-title primary-title>
             <div>
@@ -76,9 +71,7 @@
                       <v-card light>
                         <v-card-text>
                           <ul>
-                            <li v-for="entree in entrees" :key="entree">
-                              {{ entree }}
-                            </li>
+                            <li v-for="entree in entrees" :key="entree">{{ entree }}</li>
                           </ul>
                         </v-card-text>
                       </v-card>
@@ -88,13 +81,11 @@
                 <v-flex>
                   <v-expansion-panel class="mt-4">
                     <v-expansion-panel-content>
-                      <div slot="header">Choose One Sushi Roll:</div>
+                      <div slot="header">Choose 1 Regular Roll:</div>
                       <v-card light>
                         <v-card-text>
                           <ul>
-                            <li v-for="sushiroll in sushirolls" :key="sushiroll">
-                              {{ sushiroll }}
-                            </li>
+                            <li v-for="sushiroll in sushirolls" :key="sushiroll">{{ sushiroll }}</li>
                           </ul>
                         </v-card-text>
                       </v-card>
@@ -145,7 +136,7 @@ export default {
 
       noodlecombo: {
         title: "Noodle Combo",
-        itemDescription: "Choose ONE Noodle Dish & ONE Sushi Roll.",
+        itemDescription: "Choose (1) Noodle Dish & (1) Regular Sushi Roll.",
         src: require("static/images/combo/noodlecombo.jpg"),
         smallPrice: "11.95",
         largePrice: "14.95"
@@ -154,7 +145,7 @@ export default {
       entreecombo: {
         title: "Entree Combo",
         itemDescription:
-          "Choose ONE Entree & ONE Sushi Roll. Served with miso soup & salad.",
+          "Choose (1) Entree & (1) Sushi Roll. Served with miso soup & salad.",
         src: require("static/images/combo/entreecombo.jpg"),
         smallPrice: "11.95",
         largePrice: "14.95"

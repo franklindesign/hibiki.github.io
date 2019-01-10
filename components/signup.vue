@@ -27,8 +27,9 @@ hr.new1 {
 
 .text {
   color: #ffffff;
-  font-size: 2em;
-  padding-top: 10px;
+  font-size: 1.6em;
+  padding-top: 5px;
+  margin: 5px;
 }
 
 @media only screen and (max-width: 480px) {

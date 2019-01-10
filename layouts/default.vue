@@ -262,7 +262,7 @@
             </div>
           </v-flex>
           <v-flex xs12 py-3 text-xs-center>
-            &copy;2018 —
+            &copy;2008-2019 —
             <strong>HIBIKI SUSHI INC.</strong>
           </v-flex>
         </v-layout>

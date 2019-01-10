@@ -2,20 +2,23 @@
   <div>
     <h1 class="cursive ma-2">Sushi & Sashimi</h1>
     <div class="mb-4">
-      <v-icon large color="orange">star</v-icon> Sushi/Sashimi Are Available for <strong>AYCE: Sushi & Sashimi (31.95)</strong>
+      <v-icon large color="orange">star</v-icon>Sushi/Sashimi Are Available for
+      <strong>AYCE: Sushi & Sashimi (31.95)</strong>
     </div>
     <div class="mb-4">
-      <p>* Regular AYCE: Add +5.00 per sushi/sashimi</p>
+      <p>
+        <strong>* For Regular AYCE Customers: Add. +5.00 per sushi or sashimi</strong>
+      </p>
       <p>** one order limit with AYCE Sushi & Sashimi</p>
     </div>
     <v-flex xs12 sm12 md6 lg6 xl4>
-      <v-data-table :headers="headers" :items="items" hide-actions light class="elevation-1 mb-4">        
+      <v-data-table :headers="headers" :items="items" hide-actions light class="elevation-1 mb-4">
         <template slot="items" slot-scope="props">
-          <td> {{ props.item.name }}</td>
+          <td>{{ props.item.name }}</td>
           <td class="text-xs-right">{{ props.item.sushi }}</td>
           <td class="text-xs-right">{{ props.item.sashimi }}</td>
         </template>
-      </v-data-table> 
+      </v-data-table>
     </v-flex>
   </div>
 </template>

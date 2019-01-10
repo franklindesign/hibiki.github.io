@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <carousel
-      :perPageCustom="[[480, 1], [768, 1]]"
-      :autoplay="true"
-      :paginationActiveColor="`#ffffff`"
-      :paginationColor="`#303030`"
-    >
-      <slide class="slide">
-        <img :src="item1">
-      </slide>
-      <slide class="slide slide2">2</slide>
-      <slide class="slide slide3">3</slide>
-      <slide class="slide slide4">4</slide>
-    </carousel>
+  <div class="margin">
+    <div v-swiper:mySwiper="swiperOption">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="slide in slides" :key="slide.title">
+          <div class="slideDescriptions">
+            <span class="title_description">{{slide.title}}</span>
+            <br>
+            <span class="carousel_description">{{slide.description}}</span>
+          </div>
+          <img :src="slide.src" class="slidesize">
+        </div>
+      </div>
+      <div class="swiper-pagination" slot="pagination"></div>
+    </div>
   </div>
 </template>
 
@@ -20,27 +20,83 @@
 export default {
   data() {
     return {
-      item1: require("~/assets/carousel/carousel_rainbow_roll.jpg")
+      slides: [
+        {
+          title: "Create Your Own Combo: Starting at $11.95",
+          description: "Choose an Entree or Noodle dish and 1 Regular Roll",
+          src: require("static/images/carousel/carousel_item_01.jpg")
+        },
+        {
+          title: "All You Can Drink: Draft Beer",
+          description: "Available with AYCE only for $6.95. One Cent Refills.",
+          src: require("static/images/carousel/carousel_item_03.jpg")
+        },
+        {
+          title: "Lucky 7",
+          description: "Sushi Combo with 7 Fresh Fish (included with AYCE)",
+          src: require("static/images/carousel/carousel_item_02.jpg")
+        }
+      ],
+      swiperOption: {
+        pagination: {
+          el: ".swiper-pagination",
+          // dynamicBullets: true,
+          bulletActiveClass: "swiper-pagination-bullet-active"
+        },
+
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: false,
+        breakpoints: {
+          3840: {
+            slidesPerView: 1,
+            spaceBetween: 1
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 1
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 1
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 1
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 1
+          }
+        }
+      }
     };
   }
 };
 </script>
 
 <style scoped>
-.slide {
-  max-width: 100%;
-  height: auto;
+.title_description {
+  font-weight: 800;
 }
-.slide1 {
-  background-color: red;
+.carousel_description {
+  background: #ffffff;
+  padding: 5px;
+  margin: 0;
+  color: #000000;
 }
-.slide2 {
-  background-color: pink;
+.slideDescriptions {
+  position: absolute;
+  background: rgb(255, 98, 0);
+  bottom: 30px;
+  left: 30px;
+  padding: 10px;
+  /* text-align: center; */
 }
-.slide3 {
-  background-color: blue;
+.margin {
+  margin-top: 50px;
 }
-.slide4 {
-  background-color: purple;
+.slidesize {
+  width: 100%;
 }
 </style>

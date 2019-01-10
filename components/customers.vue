@@ -10,7 +10,7 @@
             <p class="quote">
               "{{customer.quote}}"
               <br>
-              <br>-
+              <br>
               <span class="name">{{customer.name}}</span>
               
               <img :src="customer.source" class="customerSource">

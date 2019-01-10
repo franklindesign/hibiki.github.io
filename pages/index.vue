@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="hero">
-      <billboard/>
+      <!-- <billboard/> -->
       <!-- <anniversary/> -->
-      <!-- <carousel/> -->
+      <carousel/>
     </section>
     <section>
       <!-- <aycd /> -->
@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import billboard from "~/components/billboard.vue";
-// import carousel from "~/components/carousel.vue";
+// import billboard from "~/components/billboard.vue";
+import carousel from "~/components/carousel.vue";
 import mostpopular from "~/components/mostpopular.vue";
 // import mostordered from "~/components/mostordered.vue";
 import customers from "~/components/customers.vue";
@@ -37,8 +37,8 @@ import prices from "~/components/prices.vue";
 
 export default {
   components: {
-    billboard,
-    // carousel,
+    // billboard,
+    carousel,
     mostpopular,
     // mostordered,
     customers,
