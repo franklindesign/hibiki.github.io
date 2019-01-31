@@ -23,7 +23,7 @@ module.exports = {
         hid: "description",
         name: "description",
         content:
-          "All-You-Can-Eat Sushi & a large menu in a roomy, laid-back Japanese bar & eatery with draft beer, and select premium sake & wine bottles."
+          "All-You-Can-Eat Japanese food with a large selection of items on the menu. Spacy room for large parties with booths and bar. Great selection of Japanese beer and Draft for All You Can Drink as well as select premium sake & wine bottles."
       }
     ],
     link: [
@@ -58,11 +58,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    "@/plugins/vuetify",
-    { src: "~/plugins/swiper.js", ssr: false },
-    { src: "~/plugins/carousel.js", ssr: false }
-  ],
+  plugins: ["@/plugins/vuetify", { src: "~/plugins/swiper.js", ssr: false }],
 
   /*
    ** Nuxt.js modules

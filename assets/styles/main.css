@@ -1,5 +1,8 @@
 .swiper-pagination-bullet-active {
-  background-color: red !important;
+  color: #ff0000 !important;
+}
+.swiper-pagination-bullet {
+  color: #ff0000 !important;
 }
 
 @media only screen and (min-width: 1008px) {

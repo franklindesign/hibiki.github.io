@@ -55,23 +55,23 @@ export default {
         breakpoints: {
           3840: {
             slidesPerView: 4,
-            spaceBetween: 10
+            spaceBetween: 1
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 10
+            spaceBetween: 1
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 10
+            spaceBetween: 1
           },
           640: {
             slidesPerView: 1,
-            spaceBetween: 10
+            spaceBetween: 1
           },
           320: {
             slidesPerView: 1,
-            spaceBetween: 10
+            spaceBetween: 1
           }
         }
       }
