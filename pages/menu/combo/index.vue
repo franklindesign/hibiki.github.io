@@ -3,7 +3,7 @@
     <h1 class="cursive ma-2">Combinations</h1>
     <v-layout wrap row>
       <v-flex md4 sm6 lg6>
-        <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
+        <v-card style="margin: 5px;" class="itemHover cardBack">
           <v-card-media :src="noodlecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
             <div class="smallPricePosition" v-text="noodlecombo.smallPrice"></div>
@@ -52,7 +52,7 @@
         </v-card>
       </v-flex>
       <v-flex md4 sm6 lg6>
-        <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
+        <v-card style="margin: 5px;" class="itemHover cardBack">
           <v-card-media :src="entreecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
             <div class="smallPricePosition" v-text="entreecombo.smallPrice"></div>
@@ -156,6 +156,10 @@ export default {
 </script>
 
 <style scoped>
+.topOrder {
+  position: relative;
+  z-index: 99;
+}
 .cardBack {
   background: rgb(29, 29, 29);
 }

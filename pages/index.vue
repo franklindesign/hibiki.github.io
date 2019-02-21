@@ -6,11 +6,11 @@
       <carousel/>
     </section>
     <section>
-      <!-- <aycd /> -->
       <signup/>
+      <!-- <aycd /> -->
     </section>
     <section>
-      <prices/>
+      <!-- <prices/> -->
       <mostpopular/>
     </section>
     <section class="customers">
@@ -33,19 +33,19 @@ import signup from "~/components/signup.vue";
 // import anniversary from "~/components/anniversary.vue";
 // import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
-import prices from "~/components/prices.vue";
+// import prices from "~/components/prices.vue";
 
 export default {
   components: {
     // billboard,
+    signup,
     carousel,
     mostpopular,
     // mostordered,
     customers,
-    delivery,
-    signup,
+    delivery
     // anniversary,
-    prices
+    // prices
     // aycd
     // specialoffers
   }

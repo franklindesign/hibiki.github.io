@@ -18,7 +18,7 @@
           </div>
         </div>
       </div>
-      <p class="swipeCards">
+      <p class="swipeCards hidden-sm-and-down">
         <br>&#x2194;
       </p>
     </div>

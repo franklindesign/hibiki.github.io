@@ -70,6 +70,7 @@
         </div>
       </v-toolbar-items>
     </v-toolbar>
+
     <!-- End Nav Desktop Menu -->
     <!-- Begin Nuxt View with Animation transition-->
     <transition

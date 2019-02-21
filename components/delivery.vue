@@ -11,8 +11,8 @@
       </v-flex>
     </v-layout>
     <div>
-      <v-container fill-height>
-        <v-layout align-center>
+      <v-container fill-height text-xs-center grid-list-md>
+        <v-layout row wrap>
           <v-flex>
             <div
               class="grubhub pa-2 ma-2"
@@ -44,6 +44,7 @@
   height: 40px;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
   border: 0px;
 }
 
@@ -52,6 +53,8 @@
   height: 60px;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center center;
   border: 0px;
 }
 
@@ -60,6 +63,7 @@
   height: 60px;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-position: center center;
   border: 0px;
 }
 

@@ -176,7 +176,7 @@
 
 #mc-embedded-subscribe-form input[type="checkbox"] {
   display: inline;
-  width: auto;
+  /* width: auto; */
   margin-right: 10px;
 }
 #mergeRow-gdpr {

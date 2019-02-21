@@ -21,19 +21,20 @@ export default {
     return {
       slides: [
         {
-          title: "All You Can Drink: Draft Beer",
-          description: "Available with AYCE only for $6.95. One Cent Refills.",
-          src: require("static/images/carousel/carousel_item_03.jpg")
-        },
-        {
-          title: "Create Your Own Combo: Starting at $11.95",
-          description: "Choose an Entree or Noodle dish and 1 Regular Roll",
+          title: "All You Can Eat Starting at $24.95",
+          description: "Choose from over 100 items for All-You-Can-Eat",
           src: require("static/images/carousel/carousel_item_01.jpg")
         },
         {
-          title: "Lucky 7",
-          description: "Sushi Combo with 7 Fresh Fish (included with AYCE)",
+          title: "We Deliver",
+          description:
+            "Order from our Grubhub, UberEats, & Postmates or call for pick-up",
           src: require("static/images/carousel/carousel_item_02.jpg")
+        },
+        {
+          title: "All You Can Drink: Draft Beer",
+          description: "Available with AYCE only for $6.95. One Cent Refills.",
+          src: require("static/images/carousel/carousel_item_03.jpg")
         }
       ],
       swiperOption: {
@@ -41,7 +42,7 @@ export default {
           el: ".swiper-pagination"
         },
         autoplay: {
-          delay: 1950,
+          delay: 2200,
           disableOnInteraction: false
         },
         slidesPerGroup: 1,

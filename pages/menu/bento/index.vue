@@ -3,13 +3,10 @@
     <h1 class="cursive ma-2">All Day Special Bento</h1>
     <v-layout wrap row>
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
-        <v-card style="margin: 5px; height: 575px;" class="itemHover cardBack">
-          <v-card-media :src="card.src" height="300px" style="background:black;">
-  
-            <div class="pricePosition" v-text="card.price">
-            </div>
-            <div class="itemNumber avatar" v-text="card.itemNumber">
-            </div>
+        <v-card style="margin: 5px;" class="itemHover cardBack">
+          <v-card-media :src="card.src" style="background:black;">
+            <div class="pricePosition" v-text="card.price"></div>
+            <div class="itemNumber avatar" v-text="card.itemNumber"></div>
           </v-card-media>
           <v-card-title primary-title>
             <div>
@@ -20,14 +17,14 @@
                   <div slot="header">Cooked Side Choice</div>
                   <v-card light>
                     <v-card-text>
-                      <p><b>(Choose One)</b></p>
-                      <p v-for="sidechoice in sidechoices" :key="sidechoice">{{sidechoice}} </p>
-  
+                      <p>
+                        <b>(Choose One)</b>
+                      </p>
+                      <p v-for="sidechoice in sidechoices" :key="sidechoice">{{sidechoice}}</p>
                     </v-card-text>
                   </v-card>
                 </v-expansion-panel-content>
               </v-expansion-panel>
-  
             </div>
           </v-card-title>
         </v-card>

@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1 class="cursive ma-2">Most Liked Items</h1>
-    <div>
+    <div class="mb-4">
       <div v-swiper:mySwiper="swiperOption">
         <div class="swiper-wrapper">
           <div class="swiper-slide mostpopularBG itemHover" v-for="card in cards" :key="card.title">
@@ -10,7 +10,7 @@
           </div>
         </div>
       </div>
-      <p class="swipeCards">
+      <p class="swipeCards hidden-sm-and-down">
         <br>&#x2194;
       </p>
     </div>
