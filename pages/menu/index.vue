@@ -1,148 +1,180 @@
 <template>
   <div>
-    <!-- <div class="centerTitle480">
-    <h1 class="cursive ma-2">10 Year Anniversary:</h1>
-    </div>
-    <div>
-      <v-layout row wrap mt-2>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
-          <div class="gradientBorder">
-            <div class="pricemargin">
-              <h2 class="ayce">Limited AYCE Menu</h2>
-              <h4>Dine-in only. 60 Min.</h4>
-    
-              <p>
-                <ul class="mt-3">
-                  <li>Lunch: $17 (11:30 AM - 4 PM)</li>
-                  <li>Dinner: $21</li>
-                </ul>
-              </p>
-              <p> All Items listed on the order sheet are included.</p>
-            </div>
-          </div>
-        </v-flex>
-      </v-layout>
-        </div> -->
-
-
     <div class="centerTitle480 mt-5">
-    <h1 class="cursive ma-2">All You Can Eat: Pricing</h1>
+      <h1 class="cursive ma-2">Hibiki Menu</h1>
     </div>
 
-    <div>
-      <v-layout row wrap mt-2>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
-          <div class="gradientBorder">
-            <div class="pricemargin">
-              <h2 class="ayce">ALL YOU CAN EAT: LUNCH</h2>
-              <h4>75 Min.</h4>
-              <p>Monday through Friday (11:30 AM - 4 PM)</p>
-              <p>
-                <ul>
-                  <li>Adults: 24.95</li>
-                  <li>Kids (4-9): 12.95</li>
-                  <li>Babies (0-3): FREE</li>
-                </ul>
-              </p>
-              <p> Yellow Star/Name items are included for AYCE.</p>
-            </div>
-          </div>
-        </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
-          <div class="gradientBorder">
-            <div class="pricemargin">
-              <h2 class="ayce">ALL YOU CAN EAT:<br>
-              DINNER/WEEKEND & HOLIDAYS</h2>
-              <h4>90 Min.</h4>
-              <p>
-                <ul><br>
-                  <li>Adults: 27.95</li>
-                  <li>Kids (4-9): 14.95</li>
-                  <li>Babies (0-3): FREE</li>
-                </ul>
-              </p>
-              <p> Yellow Star/Name items are included for AYCE.</p>
-              </div>
-          </div>
-        </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
-          <div class="gradientBorder" >
-            <div class="pricemargin">
-              <h2 class="ayce-sashimi">ALL YOU CAN EAT: SUSHI & SASHIMI (ONLY)</h2>
-              <h4>75 Min.</h4>
-              <br>
-              <p>
-                <ul>
-                  <li>Adults: 31.95</li>
-                </ul>
-              </p>
-              <p> Order from 23 options of Sushi/Sashimi.</p>
-            </div>
-          </div>
-        </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
-          <div class="gradientBorder" >
-            <div class="pricemargin">
-              <h2 class="aycd">+ ALL YOU CAN DRINK: SAPPORO</h2>
-              <h4>75 Min.</h4>
-              <br>
-              <p>
-                <ul>
-                  <li>Additional per AYCE customer: +6.95</li>
-                  <li>ONE (.01) CENT REFILLS</li>
-                  <li>For drinking age only+ </li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </v-flex>
-      </v-layout>
-    </div>
+    <v-layout wrap row>
+      <v-flex xs12 sm6 md4 lg4 xl4 v-for="category in categories" :key="category.title">
+        <v-card
+          color="#1d1d1d"
+          style="margin: 5px;"
+          class="white--text itemHover"
+          onMouseOver="this.style.backgroundColor='#EF5350'"
+          onMouseOut="this.style.backgroundColor='#1d1d1d'"
+          :to="`${category.link}`"
+        >
+          <v-layout row>
+            <v-flex xs6>
+              <v-card-title primary-title>
+                <div>
+                  <div class="headline">{{category.title}}</div>
+                </div>
+              </v-card-title>
+            </v-flex>
+            <v-flex xs6 ma-2>
+              <v-img :src="category.src" height="125px" contain></v-img>
+            </v-flex>
+          </v-layout>
+        </v-card>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
 <script>
 export default {
-  scrollToTop: true
+  scrollToTop: true,
+
+  data() {
+    return {
+      categories: [
+        {
+          title: "Pricing",
+          src: " ",
+          color: "grey darken-3",
+          link: "/menu/pricing"
+        },
+        {
+          title: "All Day Special Bento",
+          src: require("static/images/bento/medamabento.jpg"),
+          color: "grey darken-4",
+          link: "/menu/bento"
+        },
+        {
+          title: "Fresh Rolls",
+          src: require("static/images/freshrolls/rainbowroll.jpg"),
+          color: "FFE0B2",
+          link: "/menu/freshrolls"
+        },
+        {
+          title: "Cooked Rolls",
+          src: require("static/images/cookedrolls/snowroll.jpg"),
+          color: "deep-orange darken-2",
+          link: "/menu/cookedrolls"
+        },
+        {
+          title: "Tempura Rolls",
+          src: require("static/images/tempurarolls/vegasroll.jpg"),
+          color: "FFC400",
+          link: "/menu/tempurarolls"
+        },
+        {
+          title: "Regular Rolls",
+          src: "",
+          color: "red lighten-1",
+          link: "/menu/sushirolls"
+        },
+        {
+          title: "Sushi",
+          src: "",
+          color: "red darken-1",
+          link: "/menu/sushi"
+        },
+        {
+          title: "Sushi Combo",
+          src: require("static/images/sushi/lucky7.jpg"),
+          color: "red darken-2",
+          link: "/menu/sashimicombo"
+        },
+        {
+          title: "Vegetable Appetizers",
+          src: require("static/images/vegetableappetizers/edamame.jpg"),
+          color: "green",
+          link: "/menu/vegetableappetizers"
+        },
+        {
+          title: "Seafood Appetizers",
+          src: require("static/images/seafoodappetizers/bakedgreenmussels.jpg"),
+          color: "deep-orange accent-1",
+          link: "/menu/seafoodappetizers"
+        },
+        {
+          title: "Meat Appetizers",
+          src: require("static/images/meatappetizers/gyoza.jpg"),
+          color: "deep-orange accent-2",
+          link: "/menu/meatappetizers"
+        },
+        {
+          title: "Salads",
+          src: require("static/images/salads/seaweedsalad.jpg"),
+          color: "green darken-4",
+          link: "/menu/salads"
+        },
+        {
+          title: "Udon Soup & Ramen",
+          src: require("static/images/udonsoupramen/tempuraudonsoup.jpg"),
+          color: "yellow darken-1",
+          link: "/menu/udonsoupramen"
+        },
+        {
+          title: "Stir Fried Noodles",
+          src: require("static/images/stirfriednoodles/beefyakiudonsoba.jpg"),
+          color: "orange accent-4",
+          link: "/menu/stirfriednoodles"
+        },
+        {
+          title: "Miso Soup & Rice",
+          src: require("static/images/misosouprice/misosoup.jpg"),
+          color: "orange accent-3",
+          link: "/menu/misosouprice"
+        },
+        {
+          title: "Entree",
+          src: require("static/images/entree/chickenteriyaki.jpg"),
+          color: "deep-orange",
+          link: "/menu/entree"
+        },
+        {
+          title: "Desserts",
+          src: require("static/images/desserts/mochiicecream.jpg"),
+          color: "pink lighten-2",
+          link: "/menu/desserts"
+        },
+        {
+          title: "Beverages",
+          src: require("static/images/beverages/ramune.jpg"),
+          color: "pink",
+          link: "/menu/beverages"
+        },
+        {
+          title: "Beer",
+          src: require("static/images/beer/sapporopremiumbeer.jpg"),
+          color: "yellow darken-4",
+          link: "/menu/beer"
+        },
+        {
+          title: "Sake",
+          src: require("static/images/sake/katana.jpg"),
+          color: "brown lighten-4",
+          link: "/menu/sake"
+        },
+        {
+          title: "Wine",
+          src: require("static/images/wine/thenakedgrape_pinotnoir.jpg"),
+          color: "pink darken-4",
+          link: "/menu/wine"
+        }
+      ]
+    };
+  }
 };
 </script>
 
 <style scoped>
-.ayce {
-  color: #ffd700;
-}
-.ayce-sashimi {
-  color: #ff4500;
-}
-
-.aycd {
-  color: #ff8400;
-}
-
-p li {
-  list-style-type: none;
-}
-
-.gradientBorder {
-  height: 100%;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid rgb(53, 53, 53);
-  background-color: rgb(12, 12, 12);
-}
-
-.pricemargin {
-  margin: 20px;
-}
-
-h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-@media screen and (max-width: 960px) {
-  .centerTitle480 {
-    text-align: center;
-  }
+.cardBack {
+  background: rgb(29, 29, 29);
 }
 </style>
+
+ 

@@ -1,10 +1,8 @@
 <template>
-   <div class="pb-5">
+  <div class="pb-5">
     <v-layout wrap>
-      <div class="hidden-sm-and-down" v-for="menu in menus" :key="menu.name" >
-        <v-btn exact-active-class="red" exact round router :to="`${menu.router}`">
-        {{ menu.name }}
-        </v-btn>
+      <div class="hidden-sm-and-down" v-for="menu in menus" :key="menu.name">
+        <v-btn exact-active-class="red" exact round router :to="`${menu.router}`">{{ menu.name }}</v-btn>
       </div>
     </v-layout>
   </div>
@@ -17,7 +15,7 @@ export default {
       menus: [
         {
           name: "Pricing",
-          router: "/menu/"
+          router: "/menu/pricing"
         },
         {
           name: "All Day Bento",
@@ -44,11 +42,11 @@ export default {
           router: "/menu/sushirolls"
         },
         {
-          name: "Sushi & Sashimi",
+          name: "Sushi ",
           router: "/menu/sushi"
         },
         {
-          name: "Sushi/Sashimi Combo",
+          name: "Sushi Combo",
           router: "/menu/sashimicombo"
         },
         {
@@ -68,7 +66,7 @@ export default {
           router: "/menu/salads"
         },
         {
-          name: "Udon Soup & Ramen",
+          name: "Soup & Ramen",
           router: "/menu/udonsoupramen"
         },
         {

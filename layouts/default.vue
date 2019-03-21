@@ -108,7 +108,8 @@
           <v-card-title>
             <span class="headline cursive">Open Hours</span>
           </v-card-title>
-          <v-card-text>Monday: 11:30 am – 10 pm
+          <v-card-text>
+            Monday: 11:30 am – 10 pm
             <br>Tuesday: 11:30 am – 10 pm
             <br>Wednesday: 11:30 am – 10 pm
             <br>Thursday: 11:30 am – 10 pm
@@ -157,7 +158,8 @@
           <v-flex xs12 sm3 md3 lg3>
             <div class="footerItems footerAddress">
               <h3>HIBIKI SUSHI & BAR</h3>
-              <p class="grey--text mt-3">27625 Shangri La Dr.
+              <p class="grey--text mt-3">
+                27625 Shangri La Dr.
                 <br>Canyon Country, CA. 91351
                 <br>
               </p>
@@ -286,7 +288,7 @@ export default {
       items: [
         {
           title: "Pricing",
-          to: "/menu/"
+          to: "/menu/pricing"
         },
         {
           title: "Combo Menu",
