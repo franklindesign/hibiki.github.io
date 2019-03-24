@@ -3,7 +3,9 @@
     <section class="hero">
       <!-- <billboard/> -->
       <!-- <anniversary/> -->
+
       <carousel/>
+      <hiring/>
     </section>
     <section>
       <signup/>
@@ -34,6 +36,7 @@ import signup from "~/components/signup.vue";
 // import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
 // import prices from "~/components/prices.vue";
+import hiring from "~/components/hiring.vue";
 
 export default {
   components: {
@@ -43,11 +46,12 @@ export default {
     mostpopular,
     // mostordered,
     customers,
-    delivery
+    delivery,
     // anniversary,
     // prices
     // aycd
     // specialoffers
+    hiring
   }
 };
 </script>
