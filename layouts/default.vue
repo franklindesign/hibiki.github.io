@@ -199,6 +199,9 @@
                   <h4>PARTNERS</h4>
                 </li>
                 <li>
+                  <a href="http://www.doordash.com" class="grey--text" target="_blank">DoorDash</a>
+                </li>
+                <li>
                   <a href="http://www.grubhub.com" class="grey--text" target="_blank">GrubHub</a>
                 </li>
                 <li>

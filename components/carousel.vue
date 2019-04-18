@@ -21,6 +21,12 @@ export default {
     return {
       slides: [
         {
+          title: "Now delivering through DoorDash",
+          description:
+            "Search for Hibiki on the DoorDash App to start ordering.",
+          src: require("static/images/carousel/carousel_item_04.jpg")
+        },
+        {
           title: "All You Can Eat Starting at $24.95",
           description: "Choose from over 100 items for All-You-Can-Eat",
           src: require("static/images/carousel/carousel_item_01.jpg")

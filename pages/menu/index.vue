@@ -77,13 +77,13 @@ export default {
         },
         {
           title: "Sushi",
-          src: "",
+          src: require("static/images/sushisashimi.jpg"),
           color: "red darken-1",
           link: "/menu/sushi"
         },
         {
           title: "Sushi Combo",
-          src: require("static/images/sushi/lucky7.jpg"),
+          src: require("static/images/lucky7_thumb.jpg"),
           color: "red darken-2",
           link: "/menu/sashimicombo"
         },

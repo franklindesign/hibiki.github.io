@@ -3,9 +3,8 @@
     <section class="hero">
       <!-- <billboard/> -->
       <!-- <anniversary/> -->
-
       <carousel/>
-      <hiring/>
+      <!-- <hiring/> -->
     </section>
     <section>
       <signup/>
@@ -13,7 +12,8 @@
     </section>
     <section>
       <!-- <prices/> -->
-      <mostpopular/>
+      <!-- <mostpopular/> -->
+      <mostordered/>
     </section>
     <section class="customers">
       <customers/>
@@ -27,8 +27,8 @@
 <script>
 // import billboard from "~/components/billboard.vue";
 import carousel from "~/components/carousel.vue";
-import mostpopular from "~/components/mostpopular.vue";
-// import mostordered from "~/components/mostordered.vue";
+// import mostpopular from "~/components/mostpopular.vue";
+import mostordered from "~/components/mostordered.vue";
 import customers from "~/components/customers.vue";
 import delivery from "~/components/delivery.vue";
 import signup from "~/components/signup.vue";
@@ -36,22 +36,22 @@ import signup from "~/components/signup.vue";
 // import aycd from "~/components/aycd.vue";
 // import specialoffers from '~/components/specialoffers.vue'
 // import prices from "~/components/prices.vue";
-import hiring from "~/components/hiring.vue";
+// import hiring from "~/components/hiring.vue";
 
 export default {
   components: {
     // billboard,
     signup,
     carousel,
-    mostpopular,
-    // mostordered,
+    // mostpopular,
+    mostordered,
     customers,
-    delivery,
+    delivery
     // anniversary,
     // prices
     // aycd
     // specialoffers
-    hiring
+    // hiring
   }
 };
 </script>
@@ -76,7 +76,7 @@ export default {
 }
 
 .delivery {
-  background-color: #FFD700;
+  background-color: #ffffff;
   height: auto;
 }
 
