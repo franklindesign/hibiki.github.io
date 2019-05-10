@@ -7,6 +7,7 @@
       <!-- <hiring/> -->
     </section>
     <section>
+      <mothersday/>
       <signup/>
       <!-- <aycd /> -->
     </section>
@@ -37,6 +38,7 @@ import signup from "~/components/signup.vue";
 // import specialoffers from '~/components/specialoffers.vue'
 // import prices from "~/components/prices.vue";
 // import hiring from "~/components/hiring.vue";
+import mothersday from "~/components/mothersday.vue";
 
 export default {
   components: {
@@ -46,12 +48,13 @@ export default {
     // mostpopular,
     mostordered,
     customers,
-    delivery
+    delivery,
     // anniversary,
     // prices
     // aycd
     // specialoffers
     // hiring
+    mothersday
   }
 };
 </script>
@@ -81,7 +84,7 @@ export default {
 }
 
 .hero {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 </style>
 
