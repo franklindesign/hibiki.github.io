@@ -21,16 +21,22 @@ export default {
     return {
       slides: [
         {
-          title: "Now delivering through DoorDash",
+          title: "$23 AYCE Special Sale",
           description:
-            "Search for Hibiki on the DoorDash App to start ordering.",
-          src: require("static/images/carousel/carousel_item_04.jpg")
+            "Extended offer for our All-You-Can-Eat. Get AYCE for $23 lunch & dinner.",
+          src: require("static/images/carousel/carousel_item_05.jpg")
         },
         {
-          title: "All You Can Eat Starting at $24.95",
-          description: "Choose from over 100 items for All-You-Can-Eat",
-          src: require("static/images/carousel/carousel_item_01.jpg")
+          title: "Free online food delivery with DoorDash",
+          description:
+            "Download the DoorDash app, search for Hibiki to start ordering",
+          src: require("static/images/carousel/carousel_item_04.jpg")
         },
+        // {
+        //   title: "All You Can Eat Starting at $24.95",
+        //   description: "Choose from over 100 items for All-You-Can-Eat",
+        //   src: require("static/images/carousel/carousel_item_01.jpg")
+        // },
         {
           title: "We Deliver",
           description:
@@ -48,7 +54,7 @@ export default {
           el: ".swiper-pagination"
         },
         autoplay: {
-          delay: 2200,
+          delay: 3000,
           disableOnInteraction: false
         },
         slidesPerGroup: 1,
