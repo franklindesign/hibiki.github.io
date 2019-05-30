@@ -7,7 +7,7 @@
       <!-- <v-flex xs12 sm6 md6 lg4 xl4>
         <div>
           <v-card style="margin: 5px;">
-            <v-card-media
+            <v-img
               height="300"
               :src="offerOne.src"
             >
@@ -17,7 +17,7 @@
            <div class="duration">
              <h4>{{offerOne.duration}}</h4>
            </div>
-            </v-card-media>
+            </v-img>
 
             <v-card-text style="background-color: red">
              {{offerOne.description}}
@@ -29,7 +29,7 @@
       <!-- <v-flex xs12 sm6 md6 lg4 xl4>
         <div>
           <v-card style="margin: 5px;">
-            <v-card-media
+            <v-img
               height="300"
               :src="offerTwo.src"
             >
@@ -40,7 +40,7 @@
              <h4>{{offerTwo.duration}}</h4>
            
            </div>
-            </v-card-media>
+            </v-img>
           
             <v-card-text style="background-color: red">
              {{offerTwo.description}} 

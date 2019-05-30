@@ -4,12 +4,12 @@
     <v-layout wrap row>
       <v-flex md4 sm6 lg6>
         <v-card style="margin: 5px;" class="itemHover cardBack">
-          <v-card-media :src="noodlecombo.src" height="300px">
+          <v-img :src="noodlecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
             <div class="smallPricePosition" v-text="noodlecombo.smallPrice"></div>
             <div class="priceLarge">Dinner</div>
             <div class="largePricePosition" v-text="noodlecombo.largePrice"></div>
-          </v-card-media>
+          </v-img>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="noodlecombo.title"></div>
@@ -53,12 +53,12 @@
       </v-flex>
       <v-flex md4 sm6 lg6>
         <v-card style="margin: 5px;" class="itemHover cardBack">
-          <v-card-media :src="entreecombo.src" height="300px">
+          <v-img :src="entreecombo.src" height="300px">
             <div class="priceSmall">Lunch</div>
             <div class="smallPricePosition" v-text="entreecombo.smallPrice"></div>
             <div class="priceLarge">Dinner</div>
             <div class="largePricePosition" v-text="entreecombo.largePrice"></div>
-          </v-card-media>
+          </v-img>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="entreecombo.title"></div>

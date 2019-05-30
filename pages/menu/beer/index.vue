@@ -3,21 +3,18 @@
     <h1 class="cursive ma-2">Japanese Beer</h1>
     <h4 class="caption ma-2">Ask our servers for item availability. For Legal Drinking Age Only+</h4>
     <v-flex xs12 md12 sm12 lg12>
-      <v-card-media contain height="400px" :src="aycdBeer.src" class="mt-4 mb-4">
-      </v-card-media>
+      <v-img contain height="400px" :src="aycdBeer.src" class="mt-4 mb-4"></v-img>
     </v-flex>
     <v-layout wrap row>
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
-          <v-card-media :src="card.src" height="300px">
+          <v-img :src="card.src" height="300px">
             <img :src="card.logosrc" class="beerLogo">
             <div class="priceSmall">small</div>
-            <div class="smallPricePosition" v-text="card.smallPrice">
-            </div>
+            <div class="smallPricePosition" v-text="card.smallPrice"></div>
             <div class="priceLarge">large</div>
-            <div class="largePricePosition" v-text="card.largePrice">
-            </div>
-          </v-card-media>
+            <div class="largePricePosition" v-text="card.largePrice"></div>
+          </v-img>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="card.title"></div>
@@ -27,7 +24,9 @@
                   <div slot="header">Nutritional Facts</div>
                   <v-card light>
                     <v-card-text>
-                      <p><b>Average analysis per 12oz serving:</b></p>
+                      <p>
+                        <b>Average analysis per 12oz serving:</b>
+                      </p>
                       <p>{{card.abv}} ABV</p>
                       <p>Calories: {{card.calories}}</p>
                       <p>Carbohydrates: {{card.carbohydrates}}</p>

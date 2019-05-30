@@ -11,7 +11,7 @@
         xs6
       >
         <v-card style="margin: 5px" class="itemHover cardBack">
-          <v-card-media :src="card.src" class="cardsize"></v-card-media>
+          <v-img :src="card.src" class="cardsize"></v-img>
           <v-card-title primary-title class="mostorderedBG">
             <div>
               <div class="mostordered cursive" v-text="card.title"></div>

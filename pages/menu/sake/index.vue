@@ -5,16 +5,17 @@
     <v-layout wrap row>
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px;" class="itemHover cardBack">
-          <v-card-media :src="card.src" height="300px">
+          <v-img :src="card.src" height="300px">
             <div class="pricePosition" v-text="card.price"></div>
             <div class="bottlesize" v-text="card.bottlesize"></div>
-          </v-card-media>
+          </v-img>
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="card.title"></div>
               <div v-text="card.itemDescription"></div>
               <div class="sakemetervalue">
-                <span class="smv">Alc. {{card.alcohol}} </span> <br>
+                <span class="smv">Alc. {{card.alcohol}}</span>
+                <br>
                 <span class="smv">Sake Meter Value: {{card.sakemeter}}</span>
               </div>
             </div>
