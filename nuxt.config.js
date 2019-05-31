@@ -64,6 +64,7 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    "@bazzite/nuxt-optimized-images",
     [
       "@nuxtjs/google-analytics",
       {
@@ -78,6 +79,9 @@ module.exports = {
       }
     ]
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   /*
    ** Build configuration
