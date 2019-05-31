@@ -4,7 +4,7 @@
     <v-layout wrap row>
       <v-flex md4 sm6 lg6>
         <v-card style="margin: 5px;" class="itemHover cardBack">
-          <v-img :src="noodlecombo.src" height="300px">
+          <v-img :src="noodlecombo.src" height="300px" :alt="card.title">
             <div class="priceSmall">Lunch</div>
             <div class="smallPricePosition" v-text="noodlecombo.smallPrice"></div>
             <div class="priceLarge">Dinner</div>

@@ -2,7 +2,14 @@
   <div class="pb-5">
     <v-layout wrap>
       <div class="hidden-sm-and-down" v-for="menu in menus" :key="menu.name">
-        <v-btn exact-active-class="red" exact round router :to="`${menu.router}`">{{ menu.name }}</v-btn>
+        <v-btn
+          exact-active-class="red"
+          exact
+          round
+          router
+          :aria-label="`${menu.name}`"
+          :to="`${menu.router}`"
+        >{{ menu.name }}</v-btn>
       </div>
     </v-layout>
   </div>

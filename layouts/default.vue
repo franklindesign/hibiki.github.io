@@ -57,14 +57,22 @@
         <v-icon>menu</v-icon>
       </v-btn>
       <v-toolbar-items class="hidden-sm-and-down mr-5 pr-5">
-        <v-btn flat active-class router to="/" slot="activator" class="mr-2">
+        <v-btn
+          flat
+          active-class
+          router
+          to="/"
+          slot="activator"
+          aria-label="Go back to Home page"
+          class="mr-2"
+        >
           <v-icon class="mr-2">home</v-icon>Home
         </v-btn>
-        <v-btn flat active-class router to="/menu" class="mr-3">
+        <v-btn flat active-class router to="/menu" aria-label="Go to Menu" class="mr-3">
           <v-icon class="mr-2">view_module</v-icon>Menu
         </v-btn>
         <div class="mt-3">
-          <v-btn round outline to="/emails">
+          <v-btn round outline to="/emails" aria-label="Sign up for Hibiki Emails">
             <v-icon class="mr-2">email</v-icon>Sign up for Hibiki emails
           </v-btn>
         </div>
@@ -145,7 +153,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn flat="flat" @click="map = false">Close</v-btn>
+            <v-btn flat="flat" @click="map = false" aria-label="Close map">Close</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -163,7 +171,7 @@
                 <br>Canyon Country, CA. 91351
                 <br>
               </p>
-              <a @click="map = true">View Location</a>
+              <a @click="map = true" aria-label="View Location">View Location</a>
               <br>
               <p class="grey--text pt-3">(661) 298-0273</p>
             </div>
@@ -175,19 +183,27 @@
                   <h4>HIBIKI</h4>
                 </li>
                 <li>
-                  <a @click="dialog = true" class="grey--text">About</a>
+                  <a @click="dialog = true" class="grey--text" aria-label="read more about us">About</a>
                 </li>
                 <li>
-                  <nuxt-link to="/faq" class="grey--text">FAQ</nuxt-link>
+                  <nuxt-link
+                    to="/faq"
+                    class="grey--text"
+                    aria-label="go to our frequently asked questions page"
+                  >FAQ</nuxt-link>
                 </li>
                 <li>
-                  <a @click="openhours = true" class="grey--text">Hours</a>
+                  <a
+                    @click="openhours = true"
+                    class="grey--text"
+                    aria-label="Find out about our Hours"
+                  >Hours</a>
                 </li>
                 <li>
-                  <nuxt-link to="/jobs" class="grey--text">Jobs</nuxt-link>
+                  <nuxt-link to="/jobs" class="grey--text" aria-label="Go to the Job page">Jobs</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/emails" class="grey--text">Emails</nuxt-link>
+                  <nuxt-link to="/emails" class="grey--text" aria-label="Go to Emails page">Emails</nuxt-link>
                 </li>
               </ul>
             </div>
@@ -199,21 +215,42 @@
                   <h4>PARTNERS</h4>
                 </li>
                 <li>
-                  <a href="http://www.doordash.com" class="grey--text" target="_blank">DoorDash</a>
+                  <a
+                    href="http://www.doordash.com"
+                    class="grey--text"
+                    aria-label="visit DoorDash.com"
+                    target="_blank"
+                  >DoorDash</a>
                 </li>
                 <li>
-                  <a href="http://www.grubhub.com" class="grey--text" target="_blank">GrubHub</a>
+                  <a
+                    href="http://www.grubhub.com"
+                    class="grey--text"
+                    aria-label="visit grubhub.com"
+                    target="_blank"
+                  >GrubHub</a>
                 </li>
                 <li>
-                  <a href="http://www.Ubereats.com" class="grey--text" target="_blank">UberEats</a>
+                  <a
+                    href="http://www.Ubereats.com"
+                    class="grey--text"
+                    aria-label="visit UberEats.com"
+                    target="_blank"
+                  >UberEats</a>
                 </li>
                 <li>
-                  <a href="http://www.postmates.com" class="grey--text" target="_blank">Postmates</a>
+                  <a
+                    href="http://www.postmates.com"
+                    class="grey--text"
+                    aria-label="visit Postmates.com"
+                    target="_blank"
+                  >Postmates</a>
                 </li>
                 <li>
                   <a
                     href="http://www.localflavor.com"
                     class="grey--text"
+                    aria-label="Visit Localflavor.com"
                     target="_blank"
                   >LocalFlavor</a>
                 </li>
@@ -221,6 +258,7 @@
                   <a
                     href="http://www.scvsmartshopper.com"
                     class="grey--text"
+                    aria-label="Visit Smartshopper.com"
                     target="_blank"
                   >SmartShopper</a>
                 </li>
@@ -238,6 +276,7 @@
                     href="http://www.facebook.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    aria-label="Visit our page on Facebook"
                   >Facebook</a>
                 </li>
                 <li>
@@ -245,6 +284,7 @@
                     href="http://www.instagram.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    aria-label="Follow us on Instagram"
                   >Instagram</a>
                 </li>
                 <li>
@@ -252,15 +292,22 @@
                     href="http://www.twitter.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    aria-label="Visit our Twitter profile"
                   >Twitter</a>
                 </li>
                 <li>
-                  <a href="http://4sq.com/5KEWUD" class="grey--text" target="_blank">Foursquare</a>
+                  <a
+                    href="http://4sq.com/5KEWUD"
+                    class="grey--text"
+                    aria-label="Visit our page on Foursquare"
+                    target="_blank"
+                  >Foursquare</a>
                 </li>
                 <li>
                   <a
                     href="https://www.yelp.com/biz/hibiki-sushi-and-bar-santa-clarita-2"
                     class="grey--text"
+                    aria-label="Visit our page on Yelp"
                     target="_blank"
                   >Yelp</a>
                 </li>

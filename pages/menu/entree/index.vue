@@ -4,7 +4,7 @@
     <v-layout wrap row>
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px; height: 475px;" class="itemHover cardBack">
-          <v-img :src="card.src" height="300px">
+          <v-img :src="card.src" height="300px" :alt="card.title">
             <div class="starPosition">
               <v-icon large color="yellow">star</v-icon>
             </div>

@@ -23,7 +23,7 @@
               </v-card-title>
             </v-flex>
             <v-flex xs6 ma-2>
-              <v-img :src="category.src" height="125px" contain></v-img>
+              <v-img :src="category.src" height="125px" :alt="card.title" contain></v-img>
             </v-flex>
           </v-layout>
         </v-card>

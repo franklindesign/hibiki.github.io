@@ -4,7 +4,7 @@
     <v-layout wrap row>
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px;" class="itemHover cardBack">
-          <v-img :src="card.src" style="background:black;">
+          <v-img :src="card.src" style="background:black;" :alt="card.title">
             <div class="pricePosition" v-text="card.price"></div>
             <div class="itemNumber avatar" v-text="card.itemNumber"></div>
           </v-img>

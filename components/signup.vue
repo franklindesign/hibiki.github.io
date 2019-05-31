@@ -5,7 +5,7 @@
         <div class="background">
           <p class="text">Sign up for Hibiki Emails, get 10% Off Coupons.</p>
           <div>
-            <v-btn large to="/emails" color="#C62828">Sign Up</v-btn>
+            <v-btn large to="/emails" color="#C62828" aria-label="Sign up button">Sign Up</v-btn>
           </div>
         </div>
       </v-flex>

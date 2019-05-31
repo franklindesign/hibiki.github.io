@@ -3,7 +3,7 @@
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="slide in slides" :key="slide.title">
-          <img :src="slide.src" class="slidesize">
+          <img :src="slide.src" class="slidesize" :alt="`${slide.title}`">
           <div class="slideDescriptions">
             <span class="title_description">{{slide.title}}</span>
             <br>

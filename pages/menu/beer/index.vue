@@ -9,7 +9,7 @@
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
           <v-img :src="card.src" height="300px">
-            <img :src="card.logosrc" class="beerLogo">
+            <img :src="card.logosrc" class="beerLogo" :alt="card.title">
             <div class="priceSmall">small</div>
             <div class="smallPricePosition" v-text="card.smallPrice"></div>
             <div class="priceLarge">large</div>

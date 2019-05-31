@@ -14,29 +14,37 @@
       <v-layout fluid row wrap>
         <v-flex xs12 lg3>
           <div
+            role="img"
+            alt="Order from DoorDash"
             class="doordash"
-            style="height: 120px;  "
+            style="height: 120px;"
             onclick="window.open('https://www.doordash.com/store/hibiki-sushi-bar-santa-clarita-255238/', '_blank')"
           ></div>
         </v-flex>
         <v-flex xs12 lg3>
           <div
+            role="img"
+            alt="Order from Grubhub"
             class="grubhub"
-            style="height: 120px;   "
+            style="height: 120px;"
             onclick="window.open('https://www.grubhub.com/restaurant/hibiki-sushi-27625-shangri-la-dr-canyon-country/569536', '_blank')"
           ></div>
         </v-flex>
         <v-flex xs12 lg3>
           <div
+            role="img"
+            alt="Order from Postmates"
             class="postmates"
-            style="height: 120px;  "
+            style="height: 120px;"
             onclick="window.open('https://www.ubereats.com/los-angeles/food-delivery/hibiki-sushi/Ogepbi-dTd2j60Wi7n7Uaw/', '_blank')"
           ></div>
         </v-flex>
         <v-flex xs12 lg3>
           <div
+            role="img"
+            alt="Order from UberEats"
             class="ubereats"
-            style="height: 120px; "
+            style="height: 120px;"
             onclick="window.open('https://postmates.com/merchant/hibiki-sushi-bar-canyon-country', '_blank')"
           ></div>
         </v-flex>
