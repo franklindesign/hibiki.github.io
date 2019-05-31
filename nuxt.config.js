@@ -80,7 +80,12 @@ module.exports = {
     ]
   ],
   optimizedImages: {
-    optimizeImages: true
+    optimizeImagesInDev: false,
+    optimizeImages: true,
+    handleImages: ["jpeg", "png", "svg", "webp", "gif"],
+    mozjpeg: {
+      quality: 75
+    }
   },
 
   /*
