@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="cursive ma-2">Most Ordered Menu Items</h1>
+    <h1 class="cursive ma-2">Most Ordered</h1>
     <v-layout wrap row class="mb-5">
       <v-flex
         v-bind="{ [`lg${card.flex}`]: true }"
@@ -30,26 +30,26 @@ export default {
       cards: [
         {
           itemNumber: 1,
-          title: "Rainbow Roll",
-          src: require("static/images/freshrolls/rainbowroll.jpg"),
+          title: "Angie Roll",
+          src: require("static/images/freshrolls/angieroll.jpg"),
           flex: 3
         },
         {
           itemNumber: 2,
-          title: "B.S.C.R (Baked Scalloped California Roll)",
-          src: require("static/images/cookedrolls/bscr.jpg"),
+          title: "Sashimi Cocktail",
+          src: require("static/images/seafoodappetizers/sashimicocktail.jpg"),
           flex: 3
         },
         {
           itemNumber: 3,
-          title: "Crunch Shrimp Tempura Roll",
-          src: require("static/images/tempurarolls/crunchshrimptempuraroll.jpg"),
+          title: "Sean Roll",
+          src: require("static/images/tempurarolls/seanroll.jpg"),
           flex: 3
         },
         {
           itemNumber: 4,
-          title: "Gyoza Dumplings (5pcs)",
-          src: require("static/images/meatappetizers/gyoza.jpg"),
+          title: "Chicken Teriyaki",
+          src: require("static/images/entree/chickenteriyaki.jpg"),
           flex: 3
         }
       ]
