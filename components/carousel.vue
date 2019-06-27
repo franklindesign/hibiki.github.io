@@ -21,13 +21,18 @@ export default {
     return {
       slides: [
         {
-          title: "$23 AYCE Special Sale",
-          description:
-            "Extended offer for our All-You-Can-Eat. Get AYCE for $23 lunch & dinner.",
-          src: require("static/images/carousel/carousel_item_05.jpg")
+          title: "All You Can Drink: Draft Beer",
+          description: "Available with AYCE only for $6.95. One Cent Refills.",
+          src: require("static/images/carousel/carousel_item_03.jpg")
         },
+        // {
+        //   title: "$23 AYCE Special Sale",
+        //   description:
+        //     "Extended offer for our All-You-Can-Eat. Get AYCE for $23 lunch & dinner.",
+        //   src: require("static/images/carousel/carousel_item_05.jpg")
+        // },
         {
-          title: "Free online food delivery with DoorDash",
+          title: "Get online delivery with DoorDash",
           description:
             "Download the DoorDash app, search for Hibiki to start ordering",
           src: require("static/images/carousel/carousel_item_04.jpg")
@@ -42,11 +47,6 @@ export default {
           description:
             "Order from our Grubhub, UberEats, & Postmates or call for pick-up",
           src: require("static/images/carousel/carousel_item_02.jpg")
-        },
-        {
-          title: "All You Can Drink: Draft Beer",
-          description: "Available with AYCE only for $6.95. One Cent Refills.",
-          src: require("static/images/carousel/carousel_item_03.jpg")
         }
       ],
       swiperOption: {
