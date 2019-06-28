@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 lg12>
         <div class="mb-5">
-          <h2>Notice to all customers: We apologize for inconvenience, we are closed: June 27 & 28 for maintenance. We will continue business operations this weekend or Monday (July 1, 2019). Thank You!</h2>
+          <h2>Maintenance success, we are open for business today! (July 28, 2019)</h2>
         </div>
         <hr>
         <div class="background">
