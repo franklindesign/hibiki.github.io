@@ -3,7 +3,12 @@
     <v-layout row wrap>
       <v-flex xs12 lg12>
         <div class="mb-5">
-          <h2>Maintenance success, we are open for business today! (July 28, 2019)</h2>
+          <v-alert
+            outline
+            dismissible
+            :value="true"
+            type="warning"
+          >In observance of Independence Day, Hibiki will be closed on July 4th. We will reopen with normal business hours on July 5th, 2019 at 11:30 am.</v-alert>
         </div>
         <hr>
         <div class="background">
