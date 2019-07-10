@@ -14,7 +14,7 @@
               <p>Monday through Friday (11:30 AM - 4 PM)</p>
               <p>
                 <ul>
-                  <li>Adults: 24.95</li>
+                  <li>Adults: <span class="striked">24.95</span><span class="sale"><strong>22.95</strong></span></li>
                   <li>Kids (4-9): 12.95</li>
                   <li>Babies (0-3): FREE</li>
                 </ul>
@@ -31,7 +31,7 @@
               <h4>90 Min.</h4>
               <p>
                 <ul><br>
-                  <li>Adults: 27.95</li>
+                  <li>Adults: <span class="striked">27.95</span><span class="sale"><strong>25.95</strong></span></li>
                   <li>Kids (4-9): 14.95</li>
                   <li>Babies (0-3): FREE</li>
                 </ul>
@@ -83,6 +83,16 @@ export default {
 </script>
 
 <style scoped>
+.sale {
+  background-color: gold;
+  padding: .11em;
+  margin-left: 5px;
+  color: #000;
+}
+.striked {
+   text-decoration: line-through;
+}
+
 .ayce {
   color: #ffd700;
 }

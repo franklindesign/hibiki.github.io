@@ -10,7 +10,7 @@
           <div class="card">
             <p class="item menu-name">{{menu.name}}</p>
             <p class="item price1">
-              {{menu.price1}}
+              {{menu.price1}} (limited time only)
               <span class="small">{{menu.customerA}}</span>
             </p>
             <p class="item price1">
@@ -25,7 +25,7 @@
         </div>
       </div>
       <p class="swipeCards">
-        <br>&#x2194;
+        <br />&#x2194;
       </p>
     </div>
   </v-container>
@@ -49,7 +49,7 @@ export default {
         // },
         {
           name: "Lunch (Weekdays)",
-          price1: "$24.95",
+          price1: "$22.95",
           customerA: "/ adults",
           price2: "$12.95",
           customerB: "/ kids",
@@ -60,7 +60,7 @@ export default {
         },
         {
           name: "Weekend/Dinner/Holidays",
-          price1: "$27.95",
+          price1: "$25.95",
           customerA: "/ adults",
           price2: "$14.95",
           customerB: "/ kids",
