@@ -3,10 +3,10 @@
     <div v-swiper:mySwiper="swiperOption">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="slide in slides" :key="slide.title">
-          <img :src="slide.src" class="slidesize" :alt="`${slide.title}`">
+          <img :src="slide.src" class="slidesize" :alt="`${slide.title}`" />
           <div class="slideDescriptions">
             <span class="title_description">{{slide.title}}</span>
-            <br>
+            <br />
             <span>{{slide.description}}</span>
           </div>
         </div>
@@ -20,6 +20,12 @@ export default {
   data() {
     return {
       slides: [
+        {
+          title: "Limited Time Price Discount",
+          description:
+            "Starting today, AYCE starts at $22.95 ($2 OFF regular lunch and dinner price)",
+          src: require("static/images/carousel/carousel_item_06.jpg")
+        },
         {
           title: "All You Can Drink: Draft Beer",
           description: "Available with AYCE only for $6.95. One Cent Refills.",
