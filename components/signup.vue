@@ -2,9 +2,9 @@
   <v-container grid-list-md text-xs-center>
     <v-layout row wrap>
       <v-flex xs12 lg12>
-        <div class="mb-5">
+        <!-- <div class="mb-5">
           <v-alert outline dismissible :value="true" type="info">We are open today! :)</v-alert>
-        </div>
+        </div>-->
         <hr />
         <div class="background">
           <p class="headline">Subscribe to Hibiki Emails & get 10% Off Coupons.</p>

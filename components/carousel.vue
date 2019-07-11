@@ -4,13 +4,14 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="slide in slides" :key="slide.title">
           <img
-            :src="slide.src"
-            :srcset="`${slide.src320} 300w, ${slide.src480} 480w, ${slide.src800} 800w, ${slide.src1200} 1200w`"
-            sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            (max-width: 800px) 600px,
-            (max-width: 1200px) 1200px"
-            class="slidesize"
+            data-sizes="auto"
+            :data-src="slide.src"
+            :data-srcset="`${slide.src320} 300w, ${slide.src480} 480w, ${slide.src800} 800w, ${slide.src1200} 1200w`"
+            sizes="(min-width: 320px) 280px,
+            (min-width: 480px) 440px,
+            (min-width: 800px) 600px,
+            (min-width: 1200px) 1200px"
+            class="slidesize lazyload"
             :alt="`${slide.title}`"
           />
           <div class="slideDescriptions">

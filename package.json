@@ -18,6 +18,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
     "imagemin-svgo": "^7.0.0",
+    "lazysizes": "^5.1.0",
     "node-pre-gyp": "^0.13.0",
     "nuxt": "^2.8.0",
     "vue-awesome-swiper": "^3.1.3",

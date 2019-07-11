@@ -58,7 +58,11 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["@/plugins/vuetify", { src: "~/plugins/swiper.js", ssr: false }],
+  plugins: [
+    "@/plugins/vuetify",
+    { src: "~/plugins/swiper.js", ssr: false },
+    "@/plugins/vue-lazysizes.client.js"
+  ],
 
   /*
    ** Nuxt.js modules

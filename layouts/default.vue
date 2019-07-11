@@ -4,13 +4,22 @@
   <v-app dark class="appBg">
     <!-- Begin Drawer Nav -->
     <v-navigation-drawer temporary fixed v-model="drawer" right class="navDrawerBg" app>
-      <v-btn transparent fixed right flat fab @click.stop="drawer = !drawer" class="mt-2 mr-1">
-        <v-icon>close</v-icon>
+      <v-btn
+        transparent
+        fixed
+        right
+        flat
+        fab
+        @click.stop="drawer = !drawer"
+        class="mt-2 mr-1"
+        aria-label="Close Menu"
+      >
+        <v-icon aria-label="close">close</v-icon>
       </v-btn>
       <v-list subheader dense>
         <v-list-tile avatar router to="/" class="mt-2">
           <v-list-tile-avatar>
-            <v-icon>home</v-icon>
+            <v-icon aria-label="Home">home</v-icon>
           </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title>Home</v-list-tile-title>
@@ -40,7 +49,7 @@
     <v-toolbar fixed app :clipped-left="clipped" class="black">
       <div class="mt-2">
         <nuxt-link to="/">
-          <img :src="logo" height="40%" width="40%" alt="Hibiki Sushi & Bar">
+          <img :src="logo" height="40%" width="40%" alt="Hibiki Sushi & Bar" />
         </nuxt-link>
       </div>
       <v-spacer></v-spacer>
@@ -53,8 +62,9 @@
         color="#C62828"
         @click.stop="drawer = !drawer"
         class="mr-3 hidden-md-and-up"
+        aria-label="Menu"
       >
-        <v-icon>menu</v-icon>
+        <v-icon aria-label="Menu">menu</v-icon>
       </v-btn>
       <v-toolbar-items class="hidden-sm-and-down mr-5 pr-5">
         <v-btn
@@ -66,14 +76,14 @@
           aria-label="Go back to Home page"
           class="mr-2"
         >
-          <v-icon class="mr-2">home</v-icon>Home
+          <v-icon class="mr-2" aria-label="Home">home</v-icon>Home
         </v-btn>
         <v-btn flat active-class router to="/menu" aria-label="Go to Menu" class="mr-3">
-          <v-icon class="mr-2">view_module</v-icon>Menu
+          <v-icon class="mr-2" aria-label="Menu">view_module</v-icon>Menu
         </v-btn>
         <div class="mt-3">
           <v-btn round outline to="/emails" aria-label="Sign up for Hibiki Emails">
-            <v-icon class="mr-2">email</v-icon>Sign up for Hibiki emails
+            <v-icon class="mr-2" aria-label="Sign up to Emails">email</v-icon>Sign up for Hibiki emails
           </v-btn>
         </div>
       </v-toolbar-items>
@@ -86,7 +96,7 @@
       enter-active-class="animated fadeInDown"
       leave-active-class="animated fadeOutUp"
     >
-      <nuxt/>
+      <nuxt />
     </transition>
     <!-- End Nuxt View -->
     <!-- Begin About Hibiki Sushi & Bar Dialog -->
@@ -103,7 +113,7 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn flat="flat" @click="dialog = false">Close</v-btn>
+            <v-btn flat="flat" @click="dialog = false" aria-label="Close About Modal">Close</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -118,17 +128,21 @@
           </v-card-title>
           <v-card-text>
             Monday: 11:30 am – 10 pm
-            <br>Tuesday: 11:30 am – 10 pm
-            <br>Wednesday: 11:30 am – 10 pm
-            <br>Thursday: 11:30 am – 10 pm
-            <br>Friday: 11:30 am – 11 pm
-            <br>Saturday: 11:30 am – 11 pm
-            <br>Sunday: 11:30 am – 10 pm
-            <br>
+            <br />Tuesday: 11:30 am – 10 pm
+            <br />Wednesday: 11:30 am – 10 pm
+            <br />Thursday: 11:30 am – 10 pm
+            <br />Friday: 11:30 am – 11 pm
+            <br />Saturday: 11:30 am – 11 pm
+            <br />Sunday: 11:30 am – 10 pm
+            <br />
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn flat="flat" @click="openhours = false">Close</v-btn>
+            <v-btn
+              flat="flat"
+              @click="openhours = false"
+              aria-label="Close Restaurant Hours Modal"
+            >Close</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -168,11 +182,11 @@
               <h3>HIBIKI SUSHI & BAR</h3>
               <p class="grey--text mt-3">
                 27625 Shangri La Dr.
-                <br>Canyon Country, CA. 91351
-                <br>
+                <br />Canyon Country, CA. 91351
+                <br />
               </p>
               <a @click="map = true" aria-label="View Location">View Location</a>
-              <br>
+              <br />
               <p class="grey--text pt-3">(661) 298-0273</p>
             </div>
           </v-flex>
