@@ -15,6 +15,7 @@
         <v-flex xs12 lg3>
           <div
             role="img"
+            aria-label="DoorDash"
             alt="Order from DoorDash"
             class="doordash"
             style="height: 120px;"
@@ -24,6 +25,7 @@
         <v-flex xs12 lg3>
           <div
             role="img"
+            aria-label="Grubhub"
             alt="Order from Grubhub"
             class="grubhub"
             style="height: 120px;"
@@ -33,6 +35,7 @@
         <v-flex xs12 lg3>
           <div
             role="img"
+            aria-label="Postmates"
             alt="Order from Postmates"
             class="postmates"
             style="height: 120px;"
@@ -42,6 +45,7 @@
         <v-flex xs12 lg3>
           <div
             role="img"
+            aria-label="Ubereats"
             alt="Order from UberEats"
             class="ubereats"
             style="height: 120px;"

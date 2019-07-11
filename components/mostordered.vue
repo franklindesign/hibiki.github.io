@@ -11,7 +11,13 @@
         xs6
       >
         <v-card style="margin: 5px" class="itemHover cardBack">
-          <v-img :src="card.src" class="cardsize" role="img" :aria-label="`${card.title}`"></v-img>
+          <v-img
+            :src="card.src"
+            class="cardsize"
+            role="img"
+            :aria-label="`${card.title}`"
+            :alt="`${card.title}`"
+          ></v-img>
           <v-card-title primary-title class="mostorderedBG">
             <div>
               <div class="mostordered cursive" v-text="card.title"></div>

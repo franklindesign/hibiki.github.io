@@ -17,13 +17,14 @@
                   href="https://gallery.mailchimp.com/b7da092add9faced53d200a00/files/461967cd-c790-41f9-a873-0eb04f9739f9/JULY_COUPON.pdf"
                   color="#fff"
                   light
-                  aria-label="Get 10% Off Coupon"
+                  aria-label="Get Coupon"
+                  alt="10% off coupon"
                 >Get Coupon</v-btn>
               </div>
             </v-flex>
             <v-flex xs6 lg6>
               <div>
-                <v-btn large to="/emails" color="#C62828" aria-label="Sign up button">Sign Up</v-btn>
+                <v-btn large to="/emails" color="#C62828" aria-label="Sign up" alt="sign up">Sign Up</v-btn>
               </div>
             </v-flex>
           </v-layout>
