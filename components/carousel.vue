@@ -13,6 +13,7 @@
             (min-width: 1200px) 1200px"
             class="slidesize lazyload"
             :alt="`${slide.title}`"
+            :aria-label="`${slide.title}`"
           />
           <div class="slideDescriptions">
             <span class="title_description">{{slide.title}}</span>

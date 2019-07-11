@@ -49,7 +49,13 @@
     <v-toolbar fixed app :clipped-left="clipped" class="black">
       <div class="mt-2">
         <nuxt-link to="/">
-          <img :src="logo" height="40%" width="40%" alt="Hibiki Sushi & Bar" />
+          <img
+            :src="logo"
+            height="40%"
+            width="40%"
+            alt="Hibiki Sushi & Bar Logo"
+            aria-label="Hibiki Sushi & Bar Logo"
+          />
         </nuxt-link>
       </div>
       <v-spacer></v-spacer>
