@@ -240,6 +240,7 @@
                     class="grey--text"
                     aria-label="visit DoorDash.com"
                     target="_blank"
+                    rel="noopener"
                   >DoorDash</a>
                 </li>
                 <li>
@@ -248,6 +249,7 @@
                     class="grey--text"
                     aria-label="visit grubhub.com"
                     target="_blank"
+                    rel="noopener"
                   >GrubHub</a>
                 </li>
                 <li>
@@ -256,6 +258,7 @@
                     class="grey--text"
                     aria-label="visit UberEats.com"
                     target="_blank"
+                    rel="noopener"
                   >UberEats</a>
                 </li>
                 <li>
@@ -264,6 +267,7 @@
                     class="grey--text"
                     aria-label="visit Postmates.com"
                     target="_blank"
+                    rel="noopener"
                   >Postmates</a>
                 </li>
                 <li>
@@ -272,6 +276,7 @@
                     class="grey--text"
                     aria-label="Visit Localflavor.com"
                     target="_blank"
+                    rel="noopener"
                   >LocalFlavor</a>
                 </li>
                 <li>
@@ -280,6 +285,7 @@
                     class="grey--text"
                     aria-label="Visit Smartshopper.com"
                     target="_blank"
+                    rel="noopener"
                   >SmartShopper</a>
                 </li>
               </ul>
@@ -296,6 +302,7 @@
                     href="http://www.facebook.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Visit our page on Facebook"
                   >Facebook</a>
                 </li>
@@ -304,6 +311,7 @@
                     href="http://www.instagram.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Follow us on Instagram"
                   >Instagram</a>
                 </li>
@@ -312,6 +320,7 @@
                     href="http://www.twitter.com/hibikisushibar"
                     class="grey--text"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Visit our Twitter profile"
                   >Twitter</a>
                 </li>
@@ -321,6 +330,7 @@
                     class="grey--text"
                     aria-label="Visit our page on Foursquare"
                     target="_blank"
+                    rel="noopener"
                   >Foursquare</a>
                 </li>
                 <li>
@@ -329,6 +339,7 @@
                     class="grey--text"
                     aria-label="Visit our page on Yelp"
                     target="_blank"
+                    rel="noopener"
                   >Yelp</a>
                 </li>
               </ul>

@@ -8,7 +8,7 @@
             href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
             rel="stylesheet"
             type="text/css"
-          >
+          />
 
           <div id="mc_embed_signup">
             <form
@@ -30,18 +30,18 @@
                     Email Address
                     <span class="asterisk">*</span>
                   </label>
-                  <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL">
+                  <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL" />
                 </div>
                 <div class="mc-field-group">
                   <label for="mce-FNAME">
                     First Name
                     <span class="asterisk">*</span>
                   </label>
-                  <input type="text" value name="FNAME" class="required" id="mce-FNAME">
+                  <input type="text" value name="FNAME" class="required" id="mce-FNAME" />
                 </div>
                 <div class="mc-field-group">
                   <label for="mce-LNAME">Last Name</label>
-                  <input type="text" value name="LNAME" class id="mce-LNAME">
+                  <input type="text" value name="LNAME" class id="mce-LNAME" />
                 </div>
                 <div class="mc-field-group size1of2">
                   <label for="mce-BDAY-month">
@@ -60,7 +60,7 @@
                         maxlength="2"
                         name="BDAY[month]"
                         id="mce-BDAY-month"
-                      >
+                      />
                     </span> /
                     <span class="subfield dayfield">
                       <input
@@ -73,7 +73,7 @@
                         maxlength="2"
                         name="BDAY[day]"
                         id="mce-BDAY-day"
-                      >
+                      />
                     </span>
                     <span class="small-meta nowrap">( mm / dd )</span>
                   </div>
@@ -96,7 +96,7 @@
                           name="gdpr[13]"
                           value="Y"
                           class="av-checkbox"
-                        >
+                        />
                         <span>Email</span>
                       </label>
                       <label class="checkbox subfield" for="gdpr_17">
@@ -106,7 +106,7 @@
                           name="gdpr[17]"
                           value="Y"
                           class="av-checkbox"
-                        >
+                        />
                         <span>Direct Mail</span>
                       </label>
                       <label class="checkbox subfield" for="gdpr_21">
@@ -116,11 +116,11 @@
                           name="gdpr[21]"
                           value="Y"
                           class="av-checkbox"
-                        >
+                        />
                         <span>Customized Online Advertising</span>
                       </label>
                     </fieldset>
-                    <br>
+                    <br />
                     <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.</p>
                   </div>
                   <div class="content__gdprLegal">
@@ -129,6 +129,7 @@
                       <a
                         href="https://mailchimp.com/legal/"
                         target="_blank"
+                        rel="noopener"
                       >Learn more about Mailchimp's privacy practices here.</a>
                     </p>
                   </div>
@@ -144,7 +145,7 @@
                     name="b_b7da092add9faced53d200a00_0c4d558c81"
                     tabindex="-1"
                     value
-                  >
+                  />
                 </div>
                 <div class="clear">
                   <input
@@ -153,7 +154,7 @@
                     name="subscribe"
                     id="mc-embedded-subscribe"
                     class="button"
-                  >
+                  />
                 </div>
               </div>
             </form>
