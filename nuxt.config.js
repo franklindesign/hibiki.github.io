@@ -34,11 +34,12 @@ module.exports = {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"
+          "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap|Material+Icons"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Merienda:700"
+        href:
+          "https://fonts.googleapis.com/css?family=Merienda:700&display=swap"
       }
     ]
   },
@@ -82,7 +83,7 @@ module.exports = {
       "@nuxtjs/component-cache",
       {
         max: 10000,
-        maxAge: 1000 * 60 * 60
+        maxAge: 31557600
       }
     ]
   ],
