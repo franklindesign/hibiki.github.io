@@ -6,11 +6,11 @@
           <img
             data-sizes="auto"
             :data-src="slide.src"
-            :data-srcset="`${slide.src320} 300w, ${slide.src480} 480w, ${slide.src800} 800w, ${slide.src1200} 1200w`"
+            :data-srcset="`${slide.src320} 300w, ${slide.src480} 480w, ${slide.src800} 800w, ${slide.src1200} 1200w, ${slide.src1600} 1600w`"
             sizes="(max-width: 320px) 280px,
             (max-width: 480px) 440px,
             (max-width: 800px) 600px,
-            (max-width: 1200px) 1200px"
+            (max-width: 1200px) 1200px, (max-width: 1600px) 1400px"
             class="slidesize lazyload"
             :alt="`${slide.title}`"
             :aria-label="`${slide.title}`"
@@ -39,7 +39,8 @@ export default {
           src320: require("static/images/carousel/carousel_item_06_320.jpg"),
           src480: require("static/images/carousel/carousel_item_06_480.jpg"),
           src800: require("static/images/carousel/carousel_item_06_800.jpg"),
-          src1200: require("static/images/carousel/carousel_item_06.jpg")
+          src1200: require("static/images/carousel/carousel_item_06.jpg"),
+          src1600: require("static/images/carousel/carousel_item_06.jpg")
         },
         {
           title: "All You Can Drink: Draft Beer",
@@ -48,7 +49,8 @@ export default {
           src320: require("static/images/carousel/carousel_item_03_320.jpg"),
           src480: require("static/images/carousel/carousel_item_03_480.jpg"),
           src800: require("static/images/carousel/carousel_item_03_800.jpg"),
-          src1200: require("static/images/carousel/carousel_item_03.jpg")
+          src1200: require("static/images/carousel/carousel_item_03.jpg"),
+          src1600: require("static/images/carousel/carousel_item_03.jpg")
         },
         // {
         //   title: "$23 AYCE Special Sale",
@@ -64,7 +66,8 @@ export default {
           src320: require("static/images/carousel/carousel_item_04_320.jpg"),
           src480: require("static/images/carousel/carousel_item_04_480.jpg"),
           src800: require("static/images/carousel/carousel_item_04_800.jpg"),
-          src1200: require("static/images/carousel/carousel_item_04.jpg")
+          src1200: require("static/images/carousel/carousel_item_04.jpg"),
+          src1600: require("static/images/carousel/carousel_item_04.jpg")
         },
         // {
         //   title: "All You Can Eat Starting at $24.95",
@@ -79,7 +82,8 @@ export default {
           src320: require("static/images/carousel/carousel_item_02_320.jpg"),
           src480: require("static/images/carousel/carousel_item_02_480.jpg"),
           src800: require("static/images/carousel/carousel_item_02_800.jpg"),
-          src1200: require("static/images/carousel/carousel_item_02.jpg")
+          src1200: require("static/images/carousel/carousel_item_02.jpg"),
+          src1600: require("static/images/carousel/carousel_item_02.jpg")
         }
       ],
       swiperOption: {
