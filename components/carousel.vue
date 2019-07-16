@@ -32,6 +32,17 @@ export default {
     return {
       slides: [
         {
+          title: "July Drink Special",
+          description:
+            "Asahi, Sapporo, and Hot Sake for $1.99 each, until the end of July.",
+          src: require("static/images/carousel/carousel_item_07.jpg"),
+          src320: require("static/images/carousel/carousel_item_07_320.jpg"),
+          src480: require("static/images/carousel/carousel_item_07_480.jpg"),
+          src800: require("static/images/carousel/carousel_item_07_800.jpg"),
+          src1200: require("static/images/carousel/carousel_item_07.jpg"),
+          src1600: require("static/images/carousel/carousel_item_07.jpg")
+        },
+        {
           title: "Limited Time Price Discount",
           description:
             "Starting today, AYCE starts at $22.95 ($2 OFF regular lunch and dinner price)",

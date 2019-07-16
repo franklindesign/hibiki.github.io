@@ -9,7 +9,7 @@
       <v-flex v-bind="{ [`lg${card.flex}`]: true }" v-for="card in cards" :key="card.title" md4 sm6>
         <v-card style="margin: 5px; height: 600px;" class="itemHover cardBack">
           <v-img :src="card.src" height="300px">
-            <img :src="card.logosrc" class="beerLogo" :alt="card.title">
+            <img :src="card.logosrc" class="beerLogo" :alt="card.title" />
             <div class="priceSmall">small</div>
             <div class="smallPricePosition" v-text="card.smallPrice"></div>
             <div class="priceLarge">large</div>
@@ -61,7 +61,7 @@ export default {
             "The original. The icon. Sapporo Premium Beer is a refreshing lager with a crisp, refined flavor and a clean finish. The perfect beer to pair with any meal and any occasion. Kampai!",
           src: require("static/images/beer/sapporopremiumbeer.jpg"),
           logosrc: require("static/images/beer/logo-sapporo.png"),
-          smallPrice: "4.95",
+          smallPrice: "1.99",
           largePrice: "7.50",
           abv: "4.9%",
           calories: "140",
@@ -106,7 +106,7 @@ export default {
             "The original. The icon. The draft in a 16oz. beer mug.",
           src: require("static/images/beer/16ozsapporodraft.jpg"),
           logosrc: require("static/images/beer/logo-sapporo.png"),
-          smallPrice: "4.95",
+          smallPrice: "1.99",
           largePrice: "N/A",
           abv: "4.9%",
           calories: "140",
@@ -166,7 +166,7 @@ export default {
             "Refreshing. Crisp. Clear. Asahi Super Dry is our premium beer. Fans around the world have enjoyed the taste of this high quality lager.",
           src: require("static/images/beer/asahisuperdry.jpg"),
           logosrc: require("static/images/beer/logo-asahi.png"),
-          smallPrice: "4.95",
+          smallPrice: "1.99",
           largePrice: "7.50",
           abv: "4.9%",
           calories: "149",
