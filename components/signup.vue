@@ -19,6 +19,7 @@
                   light
                   aria-label="Get Coupon"
                   alt="10% off coupon"
+                  rel="noopener"
                 >Get Coupon</v-btn>
               </div>
             </v-flex>

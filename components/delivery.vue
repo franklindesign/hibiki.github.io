@@ -18,6 +18,7 @@
             aria-label="DoorDash"
             alt="Order from DoorDash"
             class="doordash"
+            rel="noopener"
             style="height: 120px;"
             onclick="window.open('https://www.doordash.com/store/hibiki-sushi-bar-santa-clarita-255238/', '_blank')"
           ></div>
@@ -28,6 +29,7 @@
             aria-label="Grubhub"
             alt="Order from Grubhub"
             class="grubhub"
+            rel="noopener"
             style="height: 120px;"
             onclick="window.open('https://www.grubhub.com/restaurant/hibiki-sushi-27625-shangri-la-dr-canyon-country/569536', '_blank')"
           ></div>
@@ -38,6 +40,7 @@
             aria-label="Postmates"
             alt="Order from Postmates"
             class="postmates"
+            rel="noopener"
             style="height: 120px;"
             onclick="window.open('https://www.ubereats.com/los-angeles/food-delivery/hibiki-sushi/Ogepbi-dTd2j60Wi7n7Uaw/', '_blank')"
           ></div>
@@ -48,6 +51,7 @@
             aria-label="Ubereats"
             alt="Order from UberEats"
             class="ubereats"
+            rel="noopener"
             style="height: 120px;"
             onclick="window.open('https://postmates.com/merchant/hibiki-sushi-bar-canyon-country', '_blank')"
           ></div>

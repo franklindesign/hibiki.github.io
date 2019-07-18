@@ -21,11 +21,18 @@
           <v-card-title primary-title class="mostorderedBG">
             <div>
               <div class="mostordered cursive" v-text="card.title"></div>
+              <div class="caption">
+                More
+                <nuxt-link :to="`${card.link}`">{{card.category}}</nuxt-link>→
+              </div>
             </div>
           </v-card-title>
         </v-card>
       </v-flex>
     </v-layout>
+    <v-flex xs12 sm12 md12 lg12 xl12 mb-4>
+      <v-btn block ripple flat large outline round to="/menu">View Menu</v-btn>
+    </v-flex>
   </v-container>
 </template>
 
@@ -36,26 +43,34 @@ export default {
       cards: [
         {
           itemNumber: 1,
-          title: "Angie Roll",
-          src: require("static/images/freshrolls/angieroll.jpg"),
+          title: "Rainbow Roll",
+          category: "Fresh Rolls",
+          src: require("static/images/freshrolls/rainbowroll.jpg"),
+          link: "/menu/freshrolls",
           flex: 3
         },
         {
           itemNumber: 2,
-          title: "Sashimi Cocktail",
-          src: require("static/images/seafoodappetizers/sashimicocktail.jpg"),
+          title: "Amber Roll",
+          category: "Tempura Rolls",
+          src: require("static/images/tempurarolls/amberroll.jpg"),
+          link: "/menu/tempurarolls",
           flex: 3
         },
         {
           itemNumber: 3,
-          title: "Sean Roll",
-          src: require("static/images/tempurarolls/seanroll.jpg"),
+          title: "Lucky 7",
+          category: "Sashimi Combo",
+          src: require("static/images/sushi/lucky7.jpg"),
+          link: "/menu/sashimicombo",
           flex: 3
         },
         {
           itemNumber: 4,
-          title: "Chicken Teriyaki",
-          src: require("static/images/entree/chickenteriyaki.jpg"),
+          title: "Garlic Edamame",
+          category: "Vegetable Appetizers",
+          src: require("static/images/vegetableappetizers/garlicedamame.jpg"),
+          link: "/menu/vegetableappetizers",
           flex: 3
         }
       ]
@@ -77,12 +92,12 @@ export default {
   background: #f63440;
 }
 .cardsize {
-  height: 200px !important;
+  height: 250px !important;
 }
 
 @media only screen and (max-width: 600px) {
   .cardsize {
-    height: 150px !important;
+    height: 200px !important;
   }
 }
 </style>

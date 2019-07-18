@@ -10,7 +10,7 @@
             sizes="(max-width: 320px) 280px,
             (max-width: 480px) 440px,
             (max-width: 800px) 600px,
-            (max-width: 1200px) 1200px, (max-width: 1600px) 1400px"
+            (max-width: 1200px) 1000px, (max-width: 1600px) 1400px"
             class="slidesize lazyload"
             :alt="`${slide.title}`"
             :aria-label="`${slide.title}`"

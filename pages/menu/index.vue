@@ -41,7 +41,7 @@ export default {
       categories: [
         {
           title: "Pricing",
-          src: " ",
+          src: require("static/images/bestprices.png"),
           color: "grey darken-3",
           link: "/menu/pricing"
         },
@@ -71,7 +71,7 @@ export default {
         },
         {
           title: "Regular Rolls",
-          src: "",
+          src: require("static/images/regular-rolls.jpg"),
           color: "red lighten-1",
           link: "/menu/sushirolls"
         },
