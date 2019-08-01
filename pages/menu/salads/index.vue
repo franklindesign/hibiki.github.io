@@ -14,7 +14,7 @@
           <v-card-title primary-title>
             <div>
               <span v-text="card.title" class="cardTitle cursive mb-3"></span>
-              <div v-text="card.itemDescription"></div>
+              <p class="caption">{{card.itemDescription}}</p>
             </div>
           </v-card-title>
         </v-card>

@@ -31,7 +31,7 @@
       </v-flex>
     </v-layout>
     <v-flex xs12 sm12 md12 lg12 xl12 mb-4>
-      <v-btn block ripple flat large outline round to="/menu">View Menu</v-btn>
+      <v-btn block ripple text large outlined rounded to="/menu">View Menu</v-btn>
     </v-flex>
   </v-container>
 </template>

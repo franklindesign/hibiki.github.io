@@ -6,7 +6,7 @@
 
     <div>
       <v-layout row wrap mt-2>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
+        <v-flex xs12 sm12 md4 lg4 ma-2>
           <div class="gradientBorder">
             <div class="pricemargin">
               <h2 class="ayce">ALL YOU CAN EAT: LUNCH</h2>
@@ -23,7 +23,7 @@
             </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
+        <v-flex xs12 sm12 md4 lg4 ma-2>
           <div class="gradientBorder">
             <div class="pricemargin">
               <h2 class="ayce">ALL YOU CAN EAT:<br>
@@ -40,7 +40,7 @@
               </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
+        <v-flex xs12 sm12 md4 lg4 ma-2>
           <div class="gradientBorder" >
             <div class="pricemargin">
               <h2 class="ayce-sashimi">ALL YOU CAN EAT: SUSHI & SASHIMI (ONLY)</h2>
@@ -55,7 +55,7 @@
             </div>
           </div>
         </v-flex>
-        <v-flex xs12 sm6 md4 lg4 ma-2>
+        <v-flex xs12 sm12 md4 lg4 ma-2>
           <div class="gradientBorder" >
             <div class="pricemargin">
               <h2 class="aycd">+ ALL YOU CAN DRINK: SAPPORO</h2>

@@ -12,10 +12,8 @@
             <div class="itemNumber avatar" v-text="card.itemNumber"></div>
           </v-img>
           <v-card-title primary-title>
-            <div>
-              <span v-text="card.title" class="cardTitle cursive mb-3"></span>
-              <div v-text="card.itemDescription"></div>
-            </div>
+            <span v-text="card.title" class="cardTitle cursive mb-3"></span>
+            <p class="caption">{{card.itemDescription}}</p>
           </v-card-title>
         </v-card>
       </v-flex>

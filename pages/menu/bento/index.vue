@@ -11,20 +11,20 @@
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="card.title"></div>
-              <div>{{card.itemDescription}}</div>
-              <v-expansion-panel class="mt-4">
-                <v-expansion-panel-content>
-                  <div slot="header">Cooked Side Choice</div>
-                  <v-card light>
-                    <v-card-text>
+              <p class="caption">{{card.itemDescription}}</p>
+              <v-expansion-panels>
+                <v-expansion-panel class="mt-4">
+                  <v-expansion-panel-header>Side Choices</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <div class="caption">
                       <p>
                         <b>(Choose One)</b>
                       </p>
                       <p v-for="sidechoice in sidechoices" :key="sidechoice">{{sidechoice}}</p>
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
             </div>
           </v-card-title>
         </v-card>

@@ -1,15 +1,15 @@
 <template>
   <div class="pb-5">
     <v-layout wrap>
-      <div class="hidden-sm-and-down" v-for="menu in menus" :key="menu.name">
-        <v-btn
+      <div class="hidden-sm-and-down ma-1" v-for="menu in menus" :key="menu.name">
+        <v-chip
           exact-active-class="red"
           exact
-          round
-          router
+          large
+          outlined
           :aria-label="`${menu.name}`"
           :to="`${menu.router}`"
-        >{{ menu.name }}</v-btn>
+        >{{ menu.name }}</v-chip>
       </div>
     </v-layout>
   </div>
@@ -49,7 +49,7 @@ export default {
           router: "/menu/sushirolls"
         },
         {
-          name: "Sushi ",
+          name: "Sushi & Sashimi",
           router: "/menu/sushi"
         },
         {

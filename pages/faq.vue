@@ -1,18 +1,18 @@
 <template>
   <v-content>
     <v-container>
-      <v-layout row wrap>
-        <v-flex xs12 lg6 xl6>
-          <div>
-            <h1 class="cursive mb-5">Frequently asked questions (FAQ)</h1>
-            <v-expansion-panel>
-              <v-expansion-panel-content v-for="question in questions" :key="question.question">
-                <div slot="header">{{question.question}}</div>
-                <v-card light>
-                  <v-card-text>{{question.answer}}</v-card-text>
-                </v-card>
-              </v-expansion-panel-content>
-            </v-expansion-panel>
+      <v-layout align-center justify-center column fill-height>
+        <v-flex xs12>
+          <div class="ma-5">
+            <h1 class="cursive mb-5">Frequently Asked Questions (FAQ)</h1>
+            <v-expansion-panels light>
+              <v-expansion-panel v-for="question in questions" :key="question.question">
+                <v-expansion-panel-header>{{question.question}}</v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <div>{{question.answer}}</div>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
           </div>
         </v-flex>
       </v-layout>

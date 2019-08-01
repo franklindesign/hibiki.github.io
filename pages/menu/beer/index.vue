@@ -18,12 +18,12 @@
           <v-card-title primary-title>
             <div>
               <div class="cardTitleAlacarte cursive mb-3" v-text="card.title"></div>
-              <div v-text="card.itemDescription"></div>
-              <v-expansion-panel class="mt-4">
-                <v-expansion-panel-content>
-                  <div slot="header">Nutritional Facts</div>
-                  <v-card light>
-                    <v-card-text>
+              <p class="caption">{{card.itemDescription}}</p>
+              <v-expansion-panels>
+                <v-expansion-panel class="mt-4">
+                  <v-expansion-panel-header>Nutritional Facts</v-expansion-panel-header>
+                  <v-expansion-panel-content>
+                    <div class="caption">
                       <p>
                         <b>Average analysis per 12oz serving:</b>
                       </p>
@@ -32,10 +32,10 @@
                       <p>Carbohydrates: {{card.carbohydrates}}</p>
                       <p>Protein: {{card.protein}}</p>
                       <p>Fat: {{card.fat}}</p>
-                    </v-card-text>
-                  </v-card>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
+                    </div>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
             </div>
           </v-card-title>
         </v-card>

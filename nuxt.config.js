@@ -52,7 +52,6 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    "vuetify/src/stylus/main.styl",
     "~assets/styles/main.css",
     "~assets/styles/mailchimp.css",
     "swiper/dist/css/swiper.css"
@@ -62,7 +61,6 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    "@/plugins/vuetify",
     { src: "~/plugins/swiper.js", ssr: false },
     "@/plugins/vue-lazysizes.client.js"
   ],
@@ -70,6 +68,9 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
+
+  devModules: ["@nuxtjs/vuetify"],
+
   modules: [
     "@bazzite/nuxt-optimized-images",
     [
@@ -95,6 +96,17 @@ module.exports = {
     }
   },
 
+  vuetify: {
+    customVariables: ["~/assets/variables.scss"],
+    theme: {
+      dark: true
+      // themes: {
+      //   dark: {
+      //     primary: colors.red
+      //   }
+      // }
+    }
+  },
   /*
    ** Build configuration
    */

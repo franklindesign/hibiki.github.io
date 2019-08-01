@@ -5,6 +5,7 @@
         <div class="swiper-slide" v-for="slide in slides" :key="slide.title">
           <img
             data-sizes="auto"
+            :src="slide.src"
             :data-src="slide.src"
             :data-srcset="`${slide.src320} 300w, ${slide.src480} 480w, ${slide.src800} 800w, ${slide.src1200} 1200w, ${slide.src1600} 1600w`"
             sizes="(max-width: 320px) 280px,
@@ -32,15 +33,14 @@ export default {
     return {
       slides: [
         {
-          title: "July Drink Special",
-          description:
-            "Asahi, Sapporo, and Hot Sake for $1.99 each, until the end of July.",
-          src: require("static/images/carousel/carousel_item_07.jpg"),
-          src320: require("static/images/carousel/carousel_item_07_320.jpg"),
-          src480: require("static/images/carousel/carousel_item_07_480.jpg"),
-          src800: require("static/images/carousel/carousel_item_07_800.jpg"),
-          src1200: require("static/images/carousel/carousel_item_07.jpg"),
-          src1600: require("static/images/carousel/carousel_item_07.jpg")
+          title: "50% OFF BEER & SAKE",
+          description: "Drinks Sale",
+          src: require("static/images/carousel/carousel_item_08.jpg"),
+          src320: require("static/images/carousel/carousel_item_08_320.jpg"),
+          src480: require("static/images/carousel/carousel_item_08_480.jpg"),
+          src800: require("static/images/carousel/carousel_item_08_800.jpg"),
+          src1200: require("static/images/carousel/carousel_item_08.jpg"),
+          src1600: require("static/images/carousel/carousel_item_08.jpg")
         },
         {
           title: "Limited Time Price Discount",

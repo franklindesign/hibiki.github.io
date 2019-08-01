@@ -14,18 +14,17 @@
           onMouseOut="this.style.backgroundColor='#1d1d1d'"
           :to="`${category.link}`"
         >
-          <v-layout row>
-            <v-flex xs6>
-              <v-card-title primary-title>
-                <div>
-                  <div class="headline">{{category.title}}</div>
-                </div>
-              </v-card-title>
-            </v-flex>
-            <v-flex xs6 ma-2>
-              <v-img :src="category.src" height="125px" :alt="category.title" contain></v-img>
-            </v-flex>
-          </v-layout>
+          <v-list-item three-line>
+            <v-list-item-content class="align-self-start">
+              <v-list-item-title class="headline mb-2" v-text="category.title"></v-list-item-title>
+
+              <v-list-item-subtitle v-text="category.title"></v-list-item-subtitle>
+            </v-list-item-content>
+
+            <v-list-item-avatar size="125" tile>
+              <v-img :src="category.src"></v-img>
+            </v-list-item-avatar>
+          </v-list-item>
         </v-card>
       </v-flex>
     </v-layout>
